@@ -15,13 +15,16 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
     {
         $this->context = $context;
         $this->staticRoutes = array(
+            '/appartement' => array(array(array('_route' => 'appartement.liste', '_controller' => 'App\\Controller\\AppartementController::index'), null, null, null, false, false, null)),
+            '/fokontany' => array(array(array('_route' => 'fokontany.liste', '_controller' => 'App\\Controller\\FokontanyController::index'), null, null, null, false, false, null)),
+            '/individu' => array(array(array('_route' => 'individu.liste', '_controller' => 'App\\Controller\\IndividuController::index'), null, null, null, false, false, null)),
+            '/quartier' => array(array(array('_route' => 'quartier.liste', '_controller' => 'App\\Controller\\QuartierController::index'), null, null, null, false, false, null)),
             '/login' => array(array(array('_route' => 'login', '_controller' => 'App\\Controller\\SecurityController::login'), null, null, null, false, false, null)),
             '/_profiler' => array(array(array('_route' => '_profiler_home', '_controller' => 'web_profiler.controller.profiler::homeAction'), null, null, null, true, false, null)),
             '/_profiler/search' => array(array(array('_route' => '_profiler_search', '_controller' => 'web_profiler.controller.profiler::searchAction'), null, null, null, false, false, null)),
             '/_profiler/search_bar' => array(array(array('_route' => '_profiler_search_bar', '_controller' => 'web_profiler.controller.profiler::searchBarAction'), null, null, null, false, false, null)),
             '/_profiler/phpinfo' => array(array(array('_route' => '_profiler_phpinfo', '_controller' => 'web_profiler.controller.profiler::phpinfoAction'), null, null, null, false, false, null)),
             '/_profiler/open' => array(array(array('_route' => '_profiler_open_file', '_controller' => 'web_profiler.controller.profiler::openAction'), null, null, null, false, false, null)),
-            '/' => array(array(array('_route' => 'home', '_controller' => 'App\\Controller\\SecurityController::login'), null, null, null, false, false, null)),
         );
         $this->regexpList = array(
             0 => '{^(?'

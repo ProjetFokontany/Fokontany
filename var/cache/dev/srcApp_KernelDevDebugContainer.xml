@@ -3934,10 +3934,16 @@
       <argument>F:\ProjetHackathon\Fokontany\var\log/dev.log</argument>
     </service>
     <service id=".abstract.instanceof.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id="App\Controller\HomeController" class="App\Controller\HomeController" public="true" autowire="true" autoconfigure="true">
+    <service id=".abstract.instanceof.App\Controller\AppartementController" class="App\Controller\AppartementController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\CommuneController" class="App\Controller\CommuneController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\FokontanyController" class="App\Controller\FokontanyController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\FoyerController" class="App\Controller\FoyerController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id="App\Controller\IndexController" class="App\Controller\IndexController" public="true" autowire="true" autoconfigure="true">
       <tag name="controller.service_arguments"/>
       <argument type="service" id="twig"/>
     </service>
+    <service id=".abstract.instanceof.App\Controller\IndividuController" class="App\Controller\IndividuController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\QuartierController" class="App\Controller\QuartierController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".service_locator.oHXyyai" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
@@ -4412,6 +4418,60 @@
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\AppartementController" class="App\Controller\AppartementController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\AppartementController" class="App\Controller\AppartementController" autowire="true" abstract="true"/>
+    <service id="App\Controller\AppartementController" class="App\Controller\AppartementController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.KTVqfp6.App\Controller\AppartementController"/>
+      </call>
+    </service>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\CommuneController" class="App\Controller\CommuneController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\CommuneController" class="App\Controller\CommuneController" autowire="true" abstract="true"/>
+    <service id="App\Controller\CommuneController" class="App\Controller\CommuneController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.KTVqfp6.App\Controller\CommuneController"/>
+      </call>
+    </service>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\FokontanyController" class="App\Controller\FokontanyController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\FokontanyController" class="App\Controller\FokontanyController" autowire="true" abstract="true"/>
+    <service id="App\Controller\FokontanyController" class="App\Controller\FokontanyController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.KTVqfp6.App\Controller\FokontanyController"/>
+      </call>
+    </service>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\FoyerController" class="App\Controller\FoyerController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\FoyerController" class="App\Controller\FoyerController" autowire="true" abstract="true"/>
+    <service id="App\Controller\FoyerController" class="App\Controller\FoyerController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.KTVqfp6.App\Controller\FoyerController"/>
+      </call>
+    </service>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\IndividuController" class="App\Controller\IndividuController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\IndividuController" class="App\Controller\IndividuController" autowire="true" abstract="true"/>
+    <service id="App\Controller\IndividuController" class="App\Controller\IndividuController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.KTVqfp6.App\Controller\IndividuController"/>
+      </call>
+    </service>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\QuartierController" class="App\Controller\QuartierController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\QuartierController" class="App\Controller\QuartierController" autowire="true" abstract="true"/>
+    <service id="App\Controller\QuartierController" class="App\Controller\QuartierController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.KTVqfp6.App\Controller\QuartierController"/>
+      </call>
+    </service>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" abstract="true"/>
     <service id="App\Controller\SecurityController" class="App\Controller\SecurityController" public="true" autowire="true" autoconfigure="true">
@@ -4792,6 +4852,42 @@
         <argument key="session" type="service" id="session" on-invalid="ignore"/>
         <argument key="twig" type="service" id="twig" on-invalid="ignore"/>
       </argument>
+    </service>
+    <service id=".service_locator.KTVqfp6.App\Controller\AppartementController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Controller\AppartementController"/>
+      <argument>App\Controller\AppartementController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.KTVqfp6" method="withContext"/>
+    </service>
+    <service id=".service_locator.KTVqfp6.App\Controller\CommuneController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Controller\CommuneController"/>
+      <argument>App\Controller\CommuneController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.KTVqfp6" method="withContext"/>
+    </service>
+    <service id=".service_locator.KTVqfp6.App\Controller\FokontanyController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Controller\FokontanyController"/>
+      <argument>App\Controller\FokontanyController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.KTVqfp6" method="withContext"/>
+    </service>
+    <service id=".service_locator.KTVqfp6.App\Controller\FoyerController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Controller\FoyerController"/>
+      <argument>App\Controller\FoyerController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.KTVqfp6" method="withContext"/>
+    </service>
+    <service id=".service_locator.KTVqfp6.App\Controller\IndividuController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Controller\IndividuController"/>
+      <argument>App\Controller\IndividuController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.KTVqfp6" method="withContext"/>
+    </service>
+    <service id=".service_locator.KTVqfp6.App\Controller\QuartierController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Controller\QuartierController"/>
+      <argument>App\Controller\QuartierController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.KTVqfp6" method="withContext"/>
     </service>
     <service id=".service_locator.KTVqfp6.App\Controller\SecurityController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator_context" id="App\Controller\SecurityController"/>

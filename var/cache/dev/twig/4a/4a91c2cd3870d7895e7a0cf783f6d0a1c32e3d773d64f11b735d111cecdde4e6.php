@@ -1271,6 +1271,6 @@ $context["voter_detail"], "vote", [], "array") == twig_constant("Symfony\\Compon
         </table>
     {% endif %}
 {% endblock %}
-", "@Security/Collector/security.html.twig", "F:\\ProjetHackathon\\Fokontany\\vendor\\symfony\\security-bundle\\Resources\\views\\Collector\\security.html.twig");
+", "@Security/Collector/security.html.twig", "D:\\Projet GIT\\Fokontany\\vendor\\symfony\\security-bundle\\Resources\\views\\Collector\\security.html.twig");
     }
 }

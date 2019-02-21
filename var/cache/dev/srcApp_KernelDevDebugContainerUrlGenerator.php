@@ -20,6 +20,10 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         $this->defaultLocale = $defaultLocale;
         if (null === self::$declaredRoutes) {
             self::$declaredRoutes = array(
+        'appartement.liste' => array(array(), array('_controller' => 'App\\Controller\\AppartementController::index'), array(), array(array('text', '/appartement')), array(), array()),
+        'fokontany.liste' => array(array(), array('_controller' => 'App\\Controller\\FokontanyController::index'), array(), array(array('text', '/fokontany')), array(), array()),
+        'individu.liste' => array(array(), array('_controller' => 'App\\Controller\\IndividuController::index'), array(), array(array('text', '/individu')), array(), array()),
+        'quartier.liste' => array(array(), array('_controller' => 'App\\Controller\\QuartierController::index'), array(), array(array('text', '/quartier')), array(), array()),
         'login' => array(array(), array('_controller' => 'App\\Controller\\SecurityController::login'), array(), array(array('text', '/login')), array(), array()),
         '_twig_error_test' => array(array('code', '_format'), array('_controller' => 'twig.controller.preview_error::previewErrorPageAction', '_format' => 'html'), array('code' => '\\d+'), array(array('variable', '.', '[^/]++', '_format', true), array('variable', '/', '\\d+', 'code', true), array('text', '/_error')), array(), array()),
         '_wdt' => array(array('token'), array('_controller' => 'web_profiler.controller.profiler::toolbarAction'), array(), array(array('variable', '/', '[^/]++', 'token', true), array('text', '/_wdt')), array(), array()),
@@ -33,7 +37,6 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         '_profiler_router' => array(array('token'), array('_controller' => 'web_profiler.controller.router::panelAction'), array(), array(array('text', '/router'), array('variable', '/', '[^/]++', 'token', true), array('text', '/_profiler')), array(), array()),
         '_profiler_exception' => array(array('token'), array('_controller' => 'web_profiler.controller.exception::showAction'), array(), array(array('text', '/exception'), array('variable', '/', '[^/]++', 'token', true), array('text', '/_profiler')), array(), array()),
         '_profiler_exception_css' => array(array('token'), array('_controller' => 'web_profiler.controller.exception::cssAction'), array(), array(array('text', '/exception.css'), array('variable', '/', '[^/]++', 'token', true), array('text', '/_profiler')), array(), array()),
-        'home' => array(array(), array('_controller' => 'App\\Controller\\SecurityController::login'), array(), array(array('text', '/')), array(), array()),
     );
         }
     }
