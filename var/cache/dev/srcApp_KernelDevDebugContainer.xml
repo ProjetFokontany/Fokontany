@@ -3943,6 +3943,7 @@
       <argument type="service" id="twig"/>
     </service>
     <service id=".abstract.instanceof.App\Controller\IndividuController" class="App\Controller\IndividuController" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Controller\PagesController" class="App\Controller\PagesController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\QuartierController" class="App\Controller\QuartierController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\SecurityController" class="App\Controller\SecurityController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".service_locator.oHXyyai" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
@@ -4463,6 +4464,16 @@
         <argument type="service" id=".service_locator.KTVqfp6.App\Controller\IndividuController"/>
       </call>
     </service>
+    <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\PagesController" class="App\Controller\PagesController" autowire="true" abstract="true"/>
+    <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\PagesController" class="App\Controller\PagesController" autowire="true" abstract="true"/>
+    <service id="App\Controller\PagesController" class="App\Controller\PagesController" public="true" autowire="true" autoconfigure="true">
+      <tag name="controller.service_arguments"/>
+      <tag name="container.service_subscriber"/>
+      <argument type="service" id="twig"/>
+      <call method="setContainer">
+        <argument type="service" id=".service_locator.KTVqfp6.App\Controller\PagesController"/>
+      </call>
+    </service>
     <service id=".instanceof.Symfony\Contracts\Service\ServiceSubscriberInterface.0.App\Controller\QuartierController" class="App\Controller\QuartierController" autowire="true" abstract="true"/>
     <service id=".instanceof.Symfony\Bundle\FrameworkBundle\Controller\AbstractController.0.App\Controller\QuartierController" class="App\Controller\QuartierController" autowire="true" abstract="true"/>
     <service id="App\Controller\QuartierController" class="App\Controller\QuartierController" public="true" autowire="true" autoconfigure="true">
@@ -4880,6 +4891,12 @@
     <service id=".service_locator.KTVqfp6.App\Controller\IndividuController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator_context" id="App\Controller\IndividuController"/>
       <argument>App\Controller\IndividuController</argument>
+      <argument type="service" id="service_container"/>
+      <factory service=".service_locator.KTVqfp6" method="withContext"/>
+    </service>
+    <service id=".service_locator.KTVqfp6.App\Controller\PagesController" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+      <tag name="container.service_locator_context" id="App\Controller\PagesController"/>
+      <argument>App\Controller\PagesController</argument>
       <argument type="service" id="service_container"/>
       <factory service=".service_locator.KTVqfp6" method="withContext"/>
     </service>
