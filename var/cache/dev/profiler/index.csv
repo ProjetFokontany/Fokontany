@@ -390,6 +390,11 @@ eccb37,127.0.0.1,GET,http://localhost:8000/accueil,1550768509,,200
 8bb033,127.0.0.1,GET,http://localhost:8000/accueil,1550768590,,200
 8f890f,127.0.0.1,GET,http://localhost:8000/accueil,1550768611,,200
 9f5848,127.0.0.1,GET,http://localhost:8000/,1550768631,,200
+<<<<<<< HEAD
 96160a,127.0.0.1,GET,http://localhost:8000/,1550770438,,200
 e8b2a8,127.0.0.1,GET,http://localhost:8000/favicon.ico,1550770441,5d48ad,200
 5d48ad,127.0.0.1,GET,http://localhost:8000/favicon.ico,1550770441,,404
+=======
+dd06a8,127.0.0.1,GET,http://localhost:8000/,1550772121,,200
+3b07f4,127.0.0.1,GET,http://localhost:8000/accueil,1550772127,,200
+>>>>>>> dev-interface
