@@ -131,7 +131,7 @@ class __TwigTemplate_6fab7fd368aa56253ba696ab52aab5fe1e1eed57f0012d215f8890acbfc
 
 \t\t\t\t\t<div class=\"flex-sb-m w-full p-t-3 p-b-32\">
 \t\t\t\t\t\t<div class=\"contact100-form-checkbox\">
-\t\t\t\t\t\t\t<input class=\"input-checkbox100\" id=\"ckb1\" type=\"checkbox\" name=\"remember-me\">
+\t\t\t\t\t\t\t<input class=\"input-checkbox100\" id=\"ckb1\" type=\"checkbox\" name=\"remember-me\" >
 \t\t\t\t\t\t\t<label class=\"label-checkbox100\" for=\"ckb1\">
 \t\t\t\t\t\t\t\tRemember me
 \t\t\t\t\t\t\t</label>
@@ -303,7 +303,7 @@ class __TwigTemplate_6fab7fd368aa56253ba696ab52aab5fe1e1eed57f0012d215f8890acbfc
 
 \t\t\t\t\t<div class=\"flex-sb-m w-full p-t-3 p-b-32\">
 \t\t\t\t\t\t<div class=\"contact100-form-checkbox\">
-\t\t\t\t\t\t\t<input class=\"input-checkbox100\" id=\"ckb1\" type=\"checkbox\" name=\"remember-me\">
+\t\t\t\t\t\t\t<input class=\"input-checkbox100\" id=\"ckb1\" type=\"checkbox\" name=\"remember-me\" >
 \t\t\t\t\t\t\t<label class=\"label-checkbox100\" for=\"ckb1\">
 \t\t\t\t\t\t\t\tRemember me
 \t\t\t\t\t\t\t</label>
@@ -367,6 +367,6 @@ class __TwigTemplate_6fab7fd368aa56253ba696ab52aab5fe1e1eed57f0012d215f8890acbfc
 \t<script src=\"js/main.js\"></script>
 
 </body>
-</html>", "security/login.html.twig", "F:\\ProjetHackathon\\Fokontany\\templates\\security\\login.html.twig");
+</html>", "security/login.html.twig", "D:\\Projet GIT\\Fokontany\\templates\\security\\login.html.twig");
     }
 }

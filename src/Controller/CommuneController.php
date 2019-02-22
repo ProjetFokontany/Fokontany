@@ -12,9 +12,9 @@ class CommuneController extends AbstractController{
      * @Route("/commune", name="commune.liste")
      * @var Response
      */
-    // public function index(): Response {
-    //     return $this->render('pages/commune/liste.html.twig');
-    // }
+    public function index(): Response {
+        return $this->render('pages/commune/index.html.twig');
+    }
     /**
      * @Route("/commune/search/{search}","")
      */
