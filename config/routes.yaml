@@ -2,6 +2,10 @@ home:
   path : /
   controller : App\Controller\SecurityController::login
 
+forgotpasword :
+  path : /forgotPassword
+  controller : App\Controller\SecurityController::forgotPassword
+
 index : 
   path : /accueil
   controller : App\Controller\PagesController::home

@@ -22,4 +22,8 @@ class SecurityController extends AbstractController
             'lastUsername'=> $lastUsername
         ]);
     }
+
+    public function forgotPassword(){
+        return $this->render('security/forgotPassword.html.twig');
+    }
 }

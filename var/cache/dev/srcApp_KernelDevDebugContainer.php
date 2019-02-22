@@ -14,8 +14,16 @@ if (!\class_exists(srcApp_KernelDevDebugContainer::class, false)) {
     \class_alias(\Container5tfktVW\srcApp_KernelDevDebugContainer::class, srcApp_KernelDevDebugContainer::class, false);
 }
 
+<<<<<<< HEAD
 return new \Container5tfktVW\srcApp_KernelDevDebugContainer(array(
     'container.build_hash' => '5tfktVW',
     'container.build_id' => 'a843048a',
     'container.build_time' => 1550770395,
 ), __DIR__.\DIRECTORY_SEPARATOR.'Container5tfktVW');
+=======
+return new \ContainerXhbxlHX\srcApp_KernelDevDebugContainer(array(
+    'container.build_hash' => 'XhbxlHX',
+    'container.build_id' => '925320ac',
+    'container.build_time' => 1550821068,
+), __DIR__.\DIRECTORY_SEPARATOR.'ContainerXhbxlHX');
+>>>>>>> dev-interface

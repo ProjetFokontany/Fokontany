@@ -26,7 +26,7 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "include/sidebar.html.twig"));
 
         // line 1
-        echo " <nav class=\"col-md-2 d-none d-md-block bg-light sidebar\">
+        echo "<nav class=\"col-md-2 d-none d-md-block bg-light sidebar\">
           <div class=\"sidebar-sticky\">
             <ul class=\"nav flex-column\">
               <li class=\"nav-item\">
@@ -121,7 +121,7 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
 
     public function getSourceContext()
     {
-        return new Twig_Source(" <nav class=\"col-md-2 d-none d-md-block bg-light sidebar\">
+        return new Twig_Source("<nav class=\"col-md-2 d-none d-md-block bg-light sidebar\">
           <div class=\"sidebar-sticky\">
             <ul class=\"nav flex-column\">
               <li class=\"nav-item\">
