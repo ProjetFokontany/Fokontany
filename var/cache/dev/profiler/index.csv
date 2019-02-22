@@ -398,3 +398,5 @@ e8b2a8,127.0.0.1,GET,http://localhost:8000/favicon.ico,1550770441,5d48ad,200
 dd06a8,127.0.0.1,GET,http://localhost:8000/,1550772121,,200
 3b07f4,127.0.0.1,GET,http://localhost:8000/accueil,1550772127,,200
 >>>>>>> dev-interface
+1a88c0,127.0.0.1,GET,http://localhost:8000/,1550772800,,200
+e6bb3c,127.0.0.1,GET,http://localhost:8000/,1550773443,,200
