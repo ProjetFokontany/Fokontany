@@ -13,7 +13,7 @@ class IndividuController extends AbstractController{
      * @var Response
      */
     public function index(): Response {
-        return $this->render('pages/individu/liste.html.twig');
+        return $this->render('pages/individu/index.html.twig');
     }
 
     /**

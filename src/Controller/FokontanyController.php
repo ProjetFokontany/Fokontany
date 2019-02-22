@@ -13,12 +13,13 @@ class FokontanyController extends AbstractController{
      * @var Response
      */
     public function index(): Response {
-        return $this->render('pages/fokontany/liste.html.twig');
+        return $this->render('pages/fokontany/index.html.twig');
     }
 
-        /**
+    /**
      * @Route("/fokontany/search={search}","")
-     */
+    */
+    
     // public function search($id): Response {
     //     return $this->render('pages/fokontany/liste.html.twig');
     // }

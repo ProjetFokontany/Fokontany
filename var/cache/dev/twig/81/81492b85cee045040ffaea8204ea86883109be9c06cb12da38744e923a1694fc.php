@@ -75,10 +75,14 @@ class __TwigTemplate_ccc6cacd293d3009195d3e99977eec83236aa3a3030daf97f666a1d2444
 </style>
 
 <div class=\"example-wrapper\">
+<<<<<<< HEAD
+     
+=======
       <div class=\"pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center\">
         <h1 class=\"display-4\">Pricing</h1>
         <p class=\"lead\">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
       </div>
+>>>>>>> dev-interface
 </div>
 ";
         
@@ -117,12 +121,16 @@ class __TwigTemplate_ccc6cacd293d3009195d3e99977eec83236aa3a3030daf97f666a1d2444
 </style>
 
 <div class=\"example-wrapper\">
+<<<<<<< HEAD
+     
+=======
       <div class=\"pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center\">
         <h1 class=\"display-4\">Pricing</h1>
         <p class=\"lead\">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
       </div>
+>>>>>>> dev-interface
 </div>
 {% endblock %}
-", "pages/home.html.twig", "F:\\ProjetHackathon\\Fokontany\\templates\\pages\\home.html.twig");
+", "pages/home.html.twig", "D:\\Projet GIT\\Fokontany\\templates\\pages\\home.html.twig");
     }
 }

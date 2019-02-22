@@ -21,7 +21,9 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         if (null === self::$declaredRoutes) {
             self::$declaredRoutes = array(
         'appartement.liste' => array(array(), array('_controller' => 'App\\Controller\\AppartementController::index'), array(), array(array('text', '/appartement')), array(), array()),
+        'commune.liste' => array(array(), array('_controller' => 'App\\Controller\\CommuneController::index'), array(), array(array('text', '/commune')), array(), array()),
         'fokontany.liste' => array(array(), array('_controller' => 'App\\Controller\\FokontanyController::index'), array(), array(array('text', '/fokontany')), array(), array()),
+        'foyer.liste' => array(array(), array('_controller' => 'App\\Controller\\FoyerController::index'), array(), array(array('text', '/foyer')), array(), array()),
         'individu.liste' => array(array(), array('_controller' => 'App\\Controller\\IndividuController::index'), array(), array(array('text', '/individu')), array(), array()),
         'quartier.liste' => array(array(), array('_controller' => 'App\\Controller\\QuartierController::index'), array(), array(array('text', '/quartier')), array(), array()),
         'login' => array(array(), array('_controller' => 'App\\Controller\\SecurityController::login'), array(), array(array('text', '/login')), array(), array()),

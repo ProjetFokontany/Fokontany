@@ -88,6 +88,6 @@ class __TwigTemplate_c980898d53c246d2ccd64d9b72e841e9e70599deeadc621f0118be178c5
 {{ include('@Twig/Exception/traces.txt.twig', { exception: e }, with_context = false) }}
 
 {% endfor %}
-", "@Twig/Exception/exception.txt.twig", "F:\\ProjetHackathon\\Fokontany\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\exception.txt.twig");
+", "@Twig/Exception/exception.txt.twig", "D:\\Projet GIT\\Fokontany\\vendor\\symfony\\twig-bundle\\Resources\\views\\Exception\\exception.txt.twig");
     }
 }

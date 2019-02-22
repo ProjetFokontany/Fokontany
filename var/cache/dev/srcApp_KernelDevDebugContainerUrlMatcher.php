@@ -16,7 +16,9 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
         $this->context = $context;
         $this->staticRoutes = array(
             '/appartement' => array(array(array('_route' => 'appartement.liste', '_controller' => 'App\\Controller\\AppartementController::index'), null, null, null, false, false, null)),
+            '/commune' => array(array(array('_route' => 'commune.liste', '_controller' => 'App\\Controller\\CommuneController::index'), null, null, null, false, false, null)),
             '/fokontany' => array(array(array('_route' => 'fokontany.liste', '_controller' => 'App\\Controller\\FokontanyController::index'), null, null, null, false, false, null)),
+            '/foyer' => array(array(array('_route' => 'foyer.liste', '_controller' => 'App\\Controller\\FoyerController::index'), null, null, null, false, false, null)),
             '/individu' => array(array(array('_route' => 'individu.liste', '_controller' => 'App\\Controller\\IndividuController::index'), null, null, null, false, false, null)),
             '/quartier' => array(array(array('_route' => 'quartier.liste', '_controller' => 'App\\Controller\\QuartierController::index'), null, null, null, false, false, null)),
             '/login' => array(array(array('_route' => 'login', '_controller' => 'App\\Controller\\SecurityController::login'), null, null, null, false, false, null)),
