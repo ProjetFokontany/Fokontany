@@ -1215,3 +1215,12 @@ ac54d0,127.0.0.1,GET,http://localhost:8000/vendor/bootstrap/js/bootstrap.min.js,
 0f244d,127.0.0.1,GET,http://localhost:8000/js/main.js,1551080728,,404
 e53464,127.0.0.1,GET,http://localhost:8000/images/icons/favicon.ico,1551080730,b5c1bb,200
 b5c1bb,127.0.0.1,GET,http://localhost:8000/images/icons/favicon.ico,1551080730,,404
+a93bbd,127.0.0.1,GET,http://localhost:8000/accueil,1551082502,,200
+9c4171,127.0.0.1,GET,http://localhost:8000/favicon.ico,1551082511,dcef8a,200
+dcef8a,127.0.0.1,GET,http://localhost:8000/favicon.ico,1551082511,,404
+50c796,127.0.0.1,GET,http://localhost:8000/vendor/bootstrap/js/bootstrap.min.js,1551082517,78b0a8,200
+78b0a8,127.0.0.1,GET,http://localhost:8000/vendor/bootstrap/js/bootstrap.min.js,1551082517,,404
+087132,127.0.0.1,GET,http://localhost:8000/vendor/countdowntime/countdowntime.js,1551082517,68ffc6,200
+68ffc6,127.0.0.1,GET,http://localhost:8000/vendor/countdowntime/countdowntime.js,1551082517,,404
+141897,127.0.0.1,GET,http://localhost:8000/js/main.js,1551082518,b537f4,200
+b537f4,127.0.0.1,GET,http://localhost:8000/js/main.js,1551082518,,404
