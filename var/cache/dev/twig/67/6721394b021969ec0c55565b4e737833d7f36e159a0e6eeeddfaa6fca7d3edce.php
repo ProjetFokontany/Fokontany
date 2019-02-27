@@ -57,7 +57,7 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
                 </div>
                 <footer>
                     <div class=\"footer-area\">
-                        <p>© Copyright 2018. All right reserved. Template by <a href=\"https://colorlib.com/wp/\">Colorlib</a>.</p>
+                        <p>© Copyright 2018. All right reserved. by <p class=\"text-primary\">E-DEVY</p> </a>.</p>
                     </div>
                 </footer>
            
@@ -298,7 +298,7 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
                 </div>
                 <footer>
                     <div class=\"footer-area\">
-                        <p>© Copyright 2018. All right reserved. Template by <a href=\"https://colorlib.com/wp/\">Colorlib</a>.</p>
+                        <p>© Copyright 2018. All right reserved. by <p class=\"text-primary\">E-DEVY</p> </a>.</p>
                     </div>
                 </footer>
            

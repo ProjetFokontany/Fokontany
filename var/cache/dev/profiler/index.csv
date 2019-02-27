@@ -1404,3 +1404,8 @@ a86151,127.0.0.1,GET,http://localhost:8000/accueil,1551246454,,200
 266e67,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,1551246456,,404
 126f7b,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1551246456,63aa8f,200
 63aa8f,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1551246456,,404
+d9ffd1,127.0.0.1,GET,http://localhost:8000/accueil,1551246744,,200
+b6ed38,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,1551246745,469f55,200
+469f55,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,1551246745,,404
+baa470,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1551246746,69fd5f,200
+69fd5f,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1551246746,,404
