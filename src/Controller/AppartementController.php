@@ -13,7 +13,7 @@ class AppartementController extends AbstractController{
      * @var Response
      */
     public function index(): Response {
-        return $this->render('pages/appartement/liste.html.twig');
+        return $this->render('pages/appartement/index.html.twig');
     }
 
     /**

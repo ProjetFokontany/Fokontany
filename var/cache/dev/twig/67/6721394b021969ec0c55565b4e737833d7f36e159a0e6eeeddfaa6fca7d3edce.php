@@ -37,23 +37,41 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
         ";
         // line 6
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 9
+        // line 25
         echo "    </head>
     <body style=\"background-color: #f5f5f5;\">
-    ";
-        // line 11
-        $this->loadTemplate("include/navbar.html.twig", "base.html.twig", 11)->display($context);
-        // line 12
-        echo "        <div class=\"container-fluid\">
-            ";
-        // line 13
+   
+        <div class=\"container-fluid\">
+            
+                <div class=\"page-container\">
+                     ";
+        // line 31
+        $this->loadTemplate("include/sidebar.html.twig", "base.html.twig", 31)->display($context);
+        // line 32
+        echo "                        <div class=\"main-content-inner\" style=\"margin-bottom:2%;\">                    
+                          
+                                    <div class=\"row\">
+                                        <div class=\"col-lg-12 mt-5\"> 
+                                              ";
+        // line 36
         $this->displayBlock('body', $context, $blocks);
-        // line 18
-        echo "        </div>
+        // line 39
+        echo "                                        </div>
+                             </div>       
+                            
+                       </div>
+                </div>
+                <footer>
+                    <div class=\"footer-area\">
+                        <p>© Copyright 2018. All right reserved. by <p class=\"text-primary\">E-DEVY</p> </a>.</p>
+                    </div>
+                </footer>
+           
+        </div>
         ";
-        // line 19
+        // line 51
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 24
+        // line 79
         echo "    </body>
 </html>
 ";
@@ -75,7 +93,58 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 7
-        echo "        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">
+        echo "        <link rel=\"shortcut icon\" type=\"image/png\" href=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/icon/favicon.ico"), "html", null, true);
+        echo "\">
+        <link rel=\"stylesheet\" href=\"";
+        // line 8
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/bootstrap.min.css"), "html", null, true);
+        echo "\">
+        <link rel=\"stylesheet\" href=\"";
+        // line 9
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/font-awesome.min.css"), "html", null, true);
+        echo "\">
+        <link rel=\"stylesheet\" href=\"";
+        // line 10
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/themify-icons.css"), "html", null, true);
+        echo "\">
+        <link rel=\"stylesheet\" href=\"";
+        // line 11
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/metisMenu.css"), "html", null, true);
+        echo "\">
+        <link rel=\"stylesheet\" href=\"";
+        // line 12
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/owl.carousel.min.css"), "html", null, true);
+        echo "\">
+        <link rel=\"stylesheet\" href=\"";
+        // line 13
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/slicknav.min.css"), "html", null, true);
+        echo "\">
+        <!-- amchart css -->
+        <link rel=\"stylesheet\" href=\"https://www.amcharts.com/lib/3/plugins/export/export.css\" type=\"text/css\" media=\"all\" />
+        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\"/>
+        <!-- others css -->
+        <link rel=\"stylesheet\" href=\"";
+        // line 18
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/typography.css"), "html", null, true);
+        echo "\">
+        <link rel=\"stylesheet\" href=\"";
+        // line 19
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/default-css.css"), "html", null, true);
+        echo "\">
+        <link rel=\"stylesheet\" href=\"";
+        // line 20
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/styles.css"), "html", null, true);
+        echo "\">
+        <link rel=\"stylesheet\" href=\"";
+        // line 21
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/css/responsive.css"), "html", null, true);
+        echo "\">
+    <!-- modernizr css -->
+    <script src=\"";
+        // line 23
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/vendor/modernizr-2.8.3.min.js"), "html", null, true);
+        echo "\"></script>
         ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -85,7 +154,7 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
 
     }
 
-    // line 13
+    // line 36
     public function block_body($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -94,14 +163,9 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        // line 14
-        echo "                <div class=\"row\">
-                    ";
-        // line 15
-        $this->loadTemplate("include/sidebar.html.twig", "base.html.twig", 15)->display($context);
-        // line 16
-        echo "                </div>
-            ";
+        // line 37
+        echo "
+                                              ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -110,7 +174,7 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
 
     }
 
-    // line 19
+    // line 51
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -119,10 +183,62 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 20
-        echo "             <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\" integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\" crossorigin=\"anonymous\"></script>
-            <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>
-            <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\" integrity=\"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1\" crossorigin=\"anonymous\"></script>
+        // line 52
+        echo "             <script src=\"";
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/vendor/jquery-2.2.4.min.js"), "html", null, true);
+        echo "\"></script>
+            <!-- bootstrap 4 js -->
+            <script src=\"";
+        // line 54
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/popper.min.js"), "html", null, true);
+        echo "\"></script>
+            <script src=\"";
+        // line 55
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/bootstrap.min.js"), "html", null, true);
+        echo "\"></script>
+            <script src=\"";
+        // line 56
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/owl.carousel.min.js"), "html", null, true);
+        echo "\"></script>
+            <script src=\"";
+        // line 57
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/metisMenu.min.js"), "html", null, true);
+        echo "\"></script>
+            <script src=\"";
+        // line 58
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/jquery.slimscroll.min.js"), "html", null, true);
+        echo "\"></script>
+            <script src=\"assets/js/jquery.slicknav.min.js\"></script>
+
+            <!-- start chart js -->
+            <script src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js\"></script>
+            <!-- start highcharts js -->
+            <script src=\"https://code.highcharts.com/highcharts.js\"></script>
+            <!-- start zingchart js -->
+            <script src=\"https://cdn.zingchart.com/zingchart.min.js\"></script>
+            <script>
+                zingchart.MODULESDIR = \"https://cdn.zingchart.com/modules/\";
+                ZC.LICENSE = [\"569d52cefae586f634c54f86dc99e6a9\", \"ee6b7db5b51705a13dc2339db3edaf6d\"];
+            </script>
+            <!-- all line chart activation -->
+            <script src=\"";
+        // line 72
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/line-chart.js"), "html", null, true);
+        echo "\"></script>
+            <!-- all pie chart -->
+            <script src=\"";
+        // line 74
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/pie-chart.js"), "html", null, true);
+        echo "\"></script>
+            <!-- others plugins -->
+            <script src=\"";
+        // line 76
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/plugins.js"), "html", null, true);
+        echo "\"></script>
+            <script src=\"";
+        // line 77
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/scripts.js"), "html", null, true);
+        echo "\"></script>
         ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -144,7 +260,7 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
 
     public function getDebugInfo()
     {
-        return array (  123 => 20,  114 => 19,  103 => 16,  101 => 15,  98 => 14,  89 => 13,  78 => 7,  69 => 6,  57 => 24,  55 => 19,  52 => 18,  50 => 13,  47 => 12,  45 => 11,  41 => 9,  39 => 6,  32 => 1,);
+        return array (  240 => 77,  236 => 76,  231 => 74,  226 => 72,  209 => 58,  205 => 57,  201 => 56,  197 => 55,  193 => 54,  187 => 52,  178 => 51,  167 => 37,  158 => 36,  146 => 23,  141 => 21,  137 => 20,  133 => 19,  129 => 18,  121 => 13,  117 => 12,  113 => 11,  109 => 10,  105 => 9,  101 => 8,  96 => 7,  87 => 6,  75 => 79,  73 => 51,  59 => 39,  57 => 36,  51 => 32,  49 => 31,  41 => 25,  39 => 6,  32 => 1,);
     }
 
     public function getSourceContext()
@@ -155,22 +271,77 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
         <meta charset=\"UTF-8\">
         <title>Fokotany</title>
         {% block stylesheets %}
-        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" crossorigin=\"anonymous\">
+        <link rel=\"shortcut icon\" type=\"image/png\" href=\"{{asset('assets/images/icon/favicon.ico')}}\">
+        <link rel=\"stylesheet\" href=\"{{asset('assets/css/bootstrap.min.css')}}\">
+        <link rel=\"stylesheet\" href=\"{{asset('assets/css/font-awesome.min.css')}}\">
+        <link rel=\"stylesheet\" href=\"{{asset('assets/css/themify-icons.css')}}\">
+        <link rel=\"stylesheet\" href=\"{{asset('assets/css/metisMenu.css')}}\">
+        <link rel=\"stylesheet\" href=\"{{asset('assets/css/owl.carousel.min.css')}}\">
+        <link rel=\"stylesheet\" href=\"{{asset('assets/css/slicknav.min.css')}}\">
+        <!-- amchart css -->
+        <link rel=\"stylesheet\" href=\"https://www.amcharts.com/lib/3/plugins/export/export.css\" type=\"text/css\" media=\"all\" />
+        <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css\"/>
+        <!-- others css -->
+        <link rel=\"stylesheet\" href=\"{{asset('assets/css/typography.css')}}\">
+        <link rel=\"stylesheet\" href=\"{{asset('assets/css/default-css.css')}}\">
+        <link rel=\"stylesheet\" href=\"{{asset('assets/css/styles.css')}}\">
+        <link rel=\"stylesheet\" href=\"{{asset('assets/css/responsive.css')}}\">
+    <!-- modernizr css -->
+    <script src=\"{{asset('assets/js/vendor/modernizr-2.8.3.min.js')}}\"></script>
         {% endblock %}
     </head>
     <body style=\"background-color: #f5f5f5;\">
-    {% include \"include/navbar.html.twig\" %}
+   
         <div class=\"container-fluid\">
-            {% block body %}
-                <div class=\"row\">
-                    {% include \"include/sidebar.html.twig\" %}
+            
+                <div class=\"page-container\">
+                     {% include \"include/sidebar.html.twig\" %}
+                        <div class=\"main-content-inner\" style=\"margin-bottom:2%;\">                    
+                          
+                                    <div class=\"row\">
+                                        <div class=\"col-lg-12 mt-5\"> 
+                                              {% block body %}
+
+                                              {% endblock %}
+                                        </div>
+                             </div>       
+                            
+                       </div>
                 </div>
-            {% endblock %}
+                <footer>
+                    <div class=\"footer-area\">
+                        <p>© Copyright 2018. All right reserved. by <p class=\"text-primary\">E-DEVY</p> </a>.</p>
+                    </div>
+                </footer>
+           
         </div>
         {% block javascripts %}
-             <script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js\" integrity=\"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM\" crossorigin=\"anonymous\"></script>
-            <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>
-            <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js\" integrity=\"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1\" crossorigin=\"anonymous\"></script>
+             <script src=\"{{asset('assets/js/vendor/jquery-2.2.4.min.js')}}\"></script>
+            <!-- bootstrap 4 js -->
+            <script src=\"{{asset('assets/js/popper.min.js')}}\"></script>
+            <script src=\"{{asset('assets/js/bootstrap.min.js')}}\"></script>
+            <script src=\"{{asset('assets/js/owl.carousel.min.js')}}\"></script>
+            <script src=\"{{asset('assets/js/metisMenu.min.js')}}\"></script>
+            <script src=\"{{asset('assets/js/jquery.slimscroll.min.js')}}\"></script>
+            <script src=\"assets/js/jquery.slicknav.min.js\"></script>
+
+            <!-- start chart js -->
+            <script src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js\"></script>
+            <!-- start highcharts js -->
+            <script src=\"https://code.highcharts.com/highcharts.js\"></script>
+            <!-- start zingchart js -->
+            <script src=\"https://cdn.zingchart.com/zingchart.min.js\"></script>
+            <script>
+                zingchart.MODULESDIR = \"https://cdn.zingchart.com/modules/\";
+                ZC.LICENSE = [\"569d52cefae586f634c54f86dc99e6a9\", \"ee6b7db5b51705a13dc2339db3edaf6d\"];
+            </script>
+            <!-- all line chart activation -->
+            <script src=\"{{asset('assets/js/line-chart.js')}}\"></script>
+            <!-- all pie chart -->
+            <script src=\"{{asset('assets/js/pie-chart.js')}}\"></script>
+            <!-- others plugins -->
+            <script src=\"{{asset('assets/js/plugins.js')}}\"></script>
+            <script src=\"{{asset('assets/js/scripts.js')}}\"></script>
         {% endblock %}
     </body>
 </html>

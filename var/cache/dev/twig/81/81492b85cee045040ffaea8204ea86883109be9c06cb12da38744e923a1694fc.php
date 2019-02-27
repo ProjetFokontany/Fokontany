@@ -68,18 +68,8 @@ class __TwigTemplate_ccc6cacd293d3009195d3e99977eec83236aa3a3030daf97f666a1d2444
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        // line 6
-        echo "<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class=\"example-wrapper\">
-      <div class=\"pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center\">
-        <h1 class=\"display-4\">Pricing</h1>
-        <p class=\"lead\">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
-      </div>
-</div>
+        echo "  
+                <h1>Hello wold</h1>  
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -101,7 +91,7 @@ class __TwigTemplate_ccc6cacd293d3009195d3e99977eec83236aa3a3030daf97f666a1d2444
 
     public function getDebugInfo()
     {
-        return array (  72 => 6,  63 => 5,  45 => 3,  15 => 1,);
+        return array (  63 => 5,  45 => 3,  15 => 1,);
     }
 
     public function getSourceContext()
@@ -110,18 +100,8 @@ class __TwigTemplate_ccc6cacd293d3009195d3e99977eec83236aa3a3030daf97f666a1d2444
 
 {% block title %}Hello PagesController!{% endblock %}
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-
-<div class=\"example-wrapper\">
-      <div class=\"pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center\">
-        <h1 class=\"display-4\">Pricing</h1>
-        <p class=\"lead\">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
-      </div>
-</div>
+{% block body %}  
+                <h1>Hello wold</h1>  
 {% endblock %}
 ", "pages/home.html.twig", "F:\\ProjetHackathon\\Fokontany\\templates\\pages\\home.html.twig");
     }

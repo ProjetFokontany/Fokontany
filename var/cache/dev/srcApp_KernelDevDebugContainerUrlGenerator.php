@@ -21,7 +21,9 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         if (null === self::$declaredRoutes) {
             self::$declaredRoutes = array(
         'appartement.liste' => array(array(), array('_controller' => 'App\\Controller\\AppartementController::index'), array(), array(array('text', '/appartement')), array(), array()),
+        'commune.liste' => array(array(), array('_controller' => 'App\\Controller\\CommuneController::index'), array(), array(array('text', '/commune')), array(), array()),
         'fokontany.liste' => array(array(), array('_controller' => 'App\\Controller\\FokontanyController::index'), array(), array(array('text', '/fokontany')), array(), array()),
+        'foyer.liste' => array(array(), array('_controller' => 'App\\Controller\\FoyerController::index'), array(), array(array('text', '/foyer')), array(), array()),
         'individu.liste' => array(array(), array('_controller' => 'App\\Controller\\IndividuController::index'), array(), array(array('text', '/individu')), array(), array()),
         'quartier.liste' => array(array(), array('_controller' => 'App\\Controller\\QuartierController::index'), array(), array(array('text', '/quartier')), array(), array()),
         'login' => array(array(), array('_controller' => 'App\\Controller\\SecurityController::login'), array(), array(array('text', '/login')), array(), array()),
@@ -38,7 +40,10 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         '_profiler_exception' => array(array('token'), array('_controller' => 'web_profiler.controller.exception::showAction'), array(), array(array('text', '/exception'), array('variable', '/', '[^/]++', 'token', true), array('text', '/_profiler')), array(), array()),
         '_profiler_exception_css' => array(array('token'), array('_controller' => 'web_profiler.controller.exception::cssAction'), array(), array(array('text', '/exception.css'), array('variable', '/', '[^/]++', 'token', true), array('text', '/_profiler')), array(), array()),
         'home' => array(array(), array('_controller' => 'App\\Controller\\SecurityController::login'), array(), array(array('text', '/')), array(), array()),
+        'forgotpasword' => array(array(), array('_controller' => 'App\\Controller\\SecurityController::forgotPassword'), array(), array(array('text', '/forgotPassword')), array(), array()),
         'index' => array(array(), array('_controller' => 'App\\Controller\\PagesController::home'), array(), array(array('text', '/accueil')), array(), array()),
+        'individu' => array(array(), array('_controller' => 'App\\Controller\\IndividuController::index'), array(), array(array('text', '/individu')), array(), array()),
+        'foyer' => array(array(), array('_controller' => 'App\\Controller\\FoyerController::index'), array(), array(array('text', '/foyer')), array(), array()),
     );
         }
     }

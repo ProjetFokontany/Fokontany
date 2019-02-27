@@ -6,8 +6,8 @@
 /public/bundles/
 /public/bundles/
 
-* var/
-* vendor/
+/var/
+/vendor/
 ###< symfony/framework-bundle ###
 
 

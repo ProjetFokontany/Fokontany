@@ -26,7 +26,7 @@ class __TwigTemplate_9b7cc773bbc21eaf61c8a4ffc9f6325c06ec4b5cef759f24d9446d7cf0f
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "include/navbar.html.twig"));
 
         // line 1
-        echo "    <nav class=\"navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow\">
+        echo "    <nav class=\"navbar navbar-expand-lg bg-dark\">
       <a class=\"navbar-brand mr-auto mr-lg-0\" href=\"#\">Fokotany</a>
       <button class=\"navbar-toggler p-0 border-0\" type=\"button\" data-toggle=\"offcanvas\">
         <span class=\"navbar-toggler-icon\"></span>
@@ -81,7 +81,7 @@ class __TwigTemplate_9b7cc773bbc21eaf61c8a4ffc9f6325c06ec4b5cef759f24d9446d7cf0f
 
     public function getSourceContext()
     {
-        return new Twig_Source("    <nav class=\"navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow\">
+        return new Twig_Source("    <nav class=\"navbar navbar-expand-lg bg-dark\">
       <a class=\"navbar-brand mr-auto mr-lg-0\" href=\"#\">Fokotany</a>
       <button class=\"navbar-toggler p-0 border-0\" type=\"button\" data-toggle=\"offcanvas\">
         <span class=\"navbar-toggler-icon\"></span>
