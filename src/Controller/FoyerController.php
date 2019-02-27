@@ -13,7 +13,11 @@ class FoyerController extends AbstractController{
      * @var Response
      */
     public function index(): Response {
+<<<<<<< HEAD
         return $this->render('pages/foyer/liste.html.twig');
+=======
+        return $this->render('pages/foyer/index.html.twig');
+>>>>>>> dev-interface
     }
 
     /**

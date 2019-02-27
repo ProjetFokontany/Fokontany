@@ -42,6 +42,8 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         'home' => array(array(), array('_controller' => 'App\\Controller\\SecurityController::login'), array(), array(array('text', '/')), array(), array()),
         'forgotpasword' => array(array(), array('_controller' => 'App\\Controller\\SecurityController::forgotPassword'), array(), array(array('text', '/forgotPassword')), array(), array()),
         'index' => array(array(), array('_controller' => 'App\\Controller\\PagesController::home'), array(), array(array('text', '/accueil')), array(), array()),
+        'individu' => array(array(), array('_controller' => 'App\\Controller\\IndividuController::index'), array(), array(array('text', '/individu')), array(), array()),
+        'foyer' => array(array(), array('_controller' => 'App\\Controller\\FoyerController::index'), array(), array(array('text', '/foyer')), array(), array()),
     );
         }
     }

@@ -68,6 +68,7 @@ class __TwigTemplate_ccc6cacd293d3009195d3e99977eec83236aa3a3030daf97f666a1d2444
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
+<<<<<<< HEAD
         // line 6
         echo "  <div class=\"header-area\">
                 <div class=\"row align-items-center\">
@@ -181,6 +182,10 @@ class __TwigTemplate_ccc6cacd293d3009195d3e99977eec83236aa3a3030daf97f666a1d2444
             </div>
 
             
+=======
+        echo "  
+                <h1>Hello wold</h1>  
+>>>>>>> dev-interface
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -202,7 +207,11 @@ class __TwigTemplate_ccc6cacd293d3009195d3e99977eec83236aa3a3030daf97f666a1d2444
 
     public function getDebugInfo()
     {
+<<<<<<< HEAD
         return array (  133 => 65,  72 => 6,  63 => 5,  45 => 3,  15 => 1,);
+=======
+        return array (  63 => 5,  45 => 3,  15 => 1,);
+>>>>>>> dev-interface
     }
 
     public function getSourceContext()
@@ -211,6 +220,7 @@ class __TwigTemplate_ccc6cacd293d3009195d3e99977eec83236aa3a3030daf97f666a1d2444
 
 {% block title %}Hello PagesController!{% endblock %}
 
+<<<<<<< HEAD
 {% block body %}
   <div class=\"header-area\">
                 <div class=\"row align-items-center\">
@@ -321,6 +331,10 @@ class __TwigTemplate_ccc6cacd293d3009195d3e99977eec83236aa3a3030daf97f666a1d2444
             </div>
 
             
+=======
+{% block body %}  
+                <h1>Hello wold</h1>  
+>>>>>>> dev-interface
 {% endblock %}
 ", "pages/home.html.twig", "F:\\ProjetHackathon\\Fokontany\\templates\\pages\\home.html.twig");
     }

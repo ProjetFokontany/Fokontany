@@ -367,6 +367,10 @@ class __TwigTemplate_6fab7fd368aa56253ba696ab52aab5fe1e1eed57f0012d215f8890acbfc
 \t<script src=\"js/main.js\"></script>
 
 </body>
+<<<<<<< HEAD
 </html>", "security/login.html.twig", "D:\\Projet GIT\\Fokontany\\templates\\security\\login.html.twig");
+=======
+</html>", "security/login.html.twig", "F:\\ProjetHackathon\\Fokontany\\templates\\security\\login.html.twig");
+>>>>>>> dev-interface
     }
 }

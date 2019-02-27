@@ -10,6 +10,15 @@ index :
   path : /accueil
   controller : App\Controller\PagesController::home
 
+individu : 
+    path : /individu
+    controller : App\Controller\IndividuController::index
+
+
+foyer :
+  path : /foyer
+  controller : App\Controller\FoyerController::index
+
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
