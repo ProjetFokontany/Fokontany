@@ -26,10 +26,10 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "include/sidebar.html.twig"));
 
         // line 1
-<<<<<<< HEAD
-        echo " <div class=\"sidebar-menu\">
+        echo "<<<<<<< HEAD
+ <div class=\"sidebar-menu\">
 =======
-        echo "        <div class=\"sidebar-menu\">
+        <div class=\"sidebar-menu\">
 >>>>>>> dev-interface
             <div class=\"sidebar-header\">
                 <div class=\"logo\">
@@ -307,10 +307,10 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
 
     public function getSourceContext()
     {
-<<<<<<< HEAD
-        return new Twig_Source(" <div class=\"sidebar-menu\">
+        return new Twig_Source("<<<<<<< HEAD
+ <div class=\"sidebar-menu\">
 =======
-        return new Twig_Source("        <div class=\"sidebar-menu\">
+        <div class=\"sidebar-menu\">
 >>>>>>> dev-interface
             <div class=\"sidebar-header\">
                 <div class=\"logo\">
