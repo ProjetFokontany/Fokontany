@@ -45,6 +45,7 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         'index' => array(array(), array('_controller' => 'App\\Controller\\PagesController::home'), array(), array(array('text', '/accueil')), array(), array()),
         'individu' => array(array(), array('_controller' => 'App\\Controller\\IndividuController::index'), array(), array(array('text', '/individu')), array(), array()),
         'individuCreate' => array(array(), array('_controller' => 'App\\Controller\\IndividuController::create'), array(), array(array('text', '/individu/create')), array(), array()),
+        'individuList' => array(array(), array('_controller' => 'App\\Controller\\IndividuController::list'), array(), array(array('text', '/individu/list')), array(), array()),
         'foyer' => array(array(), array('_controller' => 'App\\Controller\\FoyerController::index'), array(), array(array('text', '/foyer')), array(), array()),
     );
         }

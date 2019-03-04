@@ -210,7 +210,10 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
         // line 60
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/jquery.slimscroll.min.js"), "html", null, true);
         echo "\"></script>
-            <script src=\"assets/js/jquery.slicknav.min.js\"></script>
+            <script src=\"";
+        // line 61
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/jquery.slicknav.min.js"), "html", null, true);
+        echo "\"></script>
 
             <!-- start chart js -->
             <script src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js\"></script>
@@ -262,7 +265,7 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
 
     public function getDebugInfo()
     {
-        return array (  242 => 79,  238 => 78,  233 => 76,  228 => 74,  211 => 60,  207 => 59,  203 => 58,  199 => 57,  195 => 56,  189 => 54,  180 => 53,  169 => 38,  160 => 37,  148 => 23,  143 => 21,  139 => 20,  135 => 19,  131 => 18,  123 => 13,  119 => 12,  115 => 11,  111 => 10,  107 => 9,  103 => 8,  98 => 7,  89 => 6,  77 => 81,  75 => 53,  60 => 40,  58 => 37,  51 => 32,  49 => 31,  41 => 25,  39 => 6,  32 => 1,);
+        return array (  245 => 79,  241 => 78,  236 => 76,  231 => 74,  215 => 61,  211 => 60,  207 => 59,  203 => 58,  199 => 57,  195 => 56,  189 => 54,  180 => 53,  169 => 38,  160 => 37,  148 => 23,  143 => 21,  139 => 20,  135 => 19,  131 => 18,  123 => 13,  119 => 12,  115 => 11,  111 => 10,  107 => 9,  103 => 8,  98 => 7,  89 => 6,  77 => 81,  75 => 53,  60 => 40,  58 => 37,  51 => 32,  49 => 31,  41 => 25,  39 => 6,  32 => 1,);
     }
 
     public function getSourceContext()
@@ -327,7 +330,7 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
             <script src=\"{{asset('assets/js/owl.carousel.min.js')}}\"></script>
             <script src=\"{{asset('assets/js/metisMenu.min.js')}}\"></script>
             <script src=\"{{asset('assets/js/jquery.slimscroll.min.js')}}\"></script>
-            <script src=\"assets/js/jquery.slicknav.min.js\"></script>
+            <script src=\"{{asset('assets/js/jquery.slicknav.min.js')}}\"></script>
 
             <!-- start chart js -->
             <script src=\"https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js\"></script>

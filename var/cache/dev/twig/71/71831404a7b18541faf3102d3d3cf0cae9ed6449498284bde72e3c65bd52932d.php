@@ -29,7 +29,10 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
         echo "        <div class=\"sidebar-menu\">
             <div class=\"sidebar-header\">
                 <div class=\"logo\">
-                    <a href=\"#\"><img src=\"assets/images/icon/logo.png\" alt=\"logo\"></a>
+                    <a href=\"#\"><img src=\"";
+        // line 4
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/icon/logo1.png"), "html", null, true);
+        echo "\" alt=\"logo\"></a>
                 </div>
             </div>
             <div class=\"main-menu\">
@@ -40,7 +43,7 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
                                 <a href=\"javascript:void(0)\" aria-expanded=\"true\"><i class=\"fa fa-users\"></i><span>Individus</span></a>
                                 <ul class=\"collapse\">
                                     <li class=\"active\"><a href=\"/individu/create\">Nouveau individu</a></li>
-                                    <li class=\"active\"><a href=\"/individu\">List individus</a></li>
+                                    <li class=\"active\"><a href=\"/individu/list\">List individus</a></li>
                                    
                                 </ul>
                             </li>
@@ -91,7 +94,7 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
                         <div class=\"search-box pull-left\">
                             <form action=\"#\">
                                 <input type=\"text\" name=\"search\" placeholder=\"Search...\" required>
-                                <i class=\"ti-search\"></i>
+                                <i class=\" fa fa-search\"></i>
                             </form>
                         </div>
                     </div>
@@ -138,7 +141,10 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
                                     <div class=\"nofity-list\">
                                         <a href=\"#\" class=\"notify-item\">
                                             <div class=\"notify-thumb\">
-                                                <img src=\"assets/images/author/author-img1.jpg\" alt=\"image\">
+                                                <img src=\"";
+        // line 113
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/author/author-img1.jpg"), "html", null, true);
+        echo "\" alt=\"image\">
                                             </div>
                                             <div class=\"notify-text\">
                                                 <p>Aglae Mayer</p>
@@ -171,7 +177,10 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
                     </div>
                     <div class=\"col-sm-6 clearfix\">
                         <div class=\"user-profile pull-right\">
-                            <img class=\"avatar user-thumb\" src=\"assets/images/author/avatar.png\" alt=\"avatar\">
+                            <img class=\"avatar user-thumb\" src=\"";
+        // line 146
+        echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/images/author/avatar.png"), "html", null, true);
+        echo "\" alt=\"avatar\">
                             <h4 class=\"user-name dropdown-toggle\" data-toggle=\"dropdown\">Kumkum Rai <i class=\"fa fa-angle-down\"></i></h4>
                             <div class=\"dropdown-menu\">
                                 <a class=\"dropdown-item\" href=\"#\">Message</a>
@@ -278,9 +287,14 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
         return "include/sidebar.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  29 => 1,);
+        return array (  182 => 146,  146 => 113,  34 => 4,  29 => 1,);
     }
 
     public function getSourceContext()
@@ -288,7 +302,7 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
         return new Twig_Source("        <div class=\"sidebar-menu\">
             <div class=\"sidebar-header\">
                 <div class=\"logo\">
-                    <a href=\"#\"><img src=\"assets/images/icon/logo.png\" alt=\"logo\"></a>
+                    <a href=\"#\"><img src=\"{{asset('assets/images/icon/logo1.png')}}\" alt=\"logo\"></a>
                 </div>
             </div>
             <div class=\"main-menu\">
@@ -299,7 +313,7 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
                                 <a href=\"javascript:void(0)\" aria-expanded=\"true\"><i class=\"fa fa-users\"></i><span>Individus</span></a>
                                 <ul class=\"collapse\">
                                     <li class=\"active\"><a href=\"/individu/create\">Nouveau individu</a></li>
-                                    <li class=\"active\"><a href=\"/individu\">List individus</a></li>
+                                    <li class=\"active\"><a href=\"/individu/list\">List individus</a></li>
                                    
                                 </ul>
                             </li>
@@ -350,7 +364,7 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
                         <div class=\"search-box pull-left\">
                             <form action=\"#\">
                                 <input type=\"text\" name=\"search\" placeholder=\"Search...\" required>
-                                <i class=\"ti-search\"></i>
+                                <i class=\" fa fa-search\"></i>
                             </form>
                         </div>
                     </div>
@@ -397,7 +411,7 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
                                     <div class=\"nofity-list\">
                                         <a href=\"#\" class=\"notify-item\">
                                             <div class=\"notify-thumb\">
-                                                <img src=\"assets/images/author/author-img1.jpg\" alt=\"image\">
+                                                <img src=\"{{asset('assets/images/author/author-img1.jpg')}}\" alt=\"image\">
                                             </div>
                                             <div class=\"notify-text\">
                                                 <p>Aglae Mayer</p>
@@ -430,7 +444,7 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
                     </div>
                     <div class=\"col-sm-6 clearfix\">
                         <div class=\"user-profile pull-right\">
-                            <img class=\"avatar user-thumb\" src=\"assets/images/author/avatar.png\" alt=\"avatar\">
+                            <img class=\"avatar user-thumb\" src=\"{{asset('assets/images/author/avatar.png')}}\" alt=\"avatar\">
                             <h4 class=\"user-name dropdown-toggle\" data-toggle=\"dropdown\">Kumkum Rai <i class=\"fa fa-angle-down\"></i></h4>
                             <div class=\"dropdown-menu\">
                                 <a class=\"dropdown-item\" href=\"#\">Message</a>
