@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 2e3ee3,127.0.0.1,GET,http://localhost:8000/individu,1551698817,,200
 ac562e,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,1551698819,000e8d,200
 000e8d,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,1551698819,,404
@@ -41,3 +42,28 @@ c4213f,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,15
 539fec,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,1551698885,,404
 05e2ba,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1551698886,3ab51e,200
 3ab51e,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1551698886,,404
+=======
+b49115,127.0.0.1,GET,http://localhost:8000/accueil,1551710447,,200
+33d67f,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,1551710448,c5240b,200
+c5240b,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,1551710448,,404
+393c33,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1551710448,241ae9,200
+241ae9,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1551710448,,404
+1eea97,127.0.0.1,GET,http://localhost:8000/,1551710479,,200
+b8a133,127.0.0.1,GET,http://localhost:8000/vendor/bootstrap/js/bootstrap.min.js,1551710480,c1d35a,200
+c1d35a,127.0.0.1,GET,http://localhost:8000/vendor/bootstrap/js/bootstrap.min.js,1551710480,,404
+637ac6,127.0.0.1,GET,http://localhost:8000/vendor/countdowntime/countdowntime.js,1551710480,723b28,200
+723b28,127.0.0.1,GET,http://localhost:8000/vendor/countdowntime/countdowntime.js,1551710480,,404
+be2ad5,127.0.0.1,GET,http://localhost:8000/js/main.js,1551710480,9a0f61,200
+9a0f61,127.0.0.1,GET,http://localhost:8000/js/main.js,1551710480,,404
+3b8526,127.0.0.1,GET,http://localhost:8000/vendor/bootstrap/js/bootstrap.min.js,1551710480,a98b01,200
+a98b01,127.0.0.1,GET,http://localhost:8000/vendor/bootstrap/js/bootstrap.min.js,1551710480,,404
+892a8c,127.0.0.1,GET,http://localhost:8000/vendor/countdowntime/countdowntime.js,1551710480,b16bae,200
+b16bae,127.0.0.1,GET,http://localhost:8000/vendor/countdowntime/countdowntime.js,1551710480,,404
+e60aa5,127.0.0.1,GET,http://localhost:8000/js/main.js,1551710480,938dda,200
+938dda,127.0.0.1,GET,http://localhost:8000/js/main.js,1551710480,,404
+bb4a75,127.0.0.1,GET,http://localhost:8000/accueil,1551710489,,200
+dae5e3,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,1551710489,b3dc87,200
+b3dc87,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,1551710489,,404
+50258c,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1551710490,4b11c7,200
+4b11c7,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1551710490,,404
+>>>>>>> Stashed changes
