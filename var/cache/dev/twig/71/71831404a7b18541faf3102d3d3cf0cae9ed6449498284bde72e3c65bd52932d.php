@@ -26,11 +26,7 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "include/sidebar.html.twig"));
 
         // line 1
-        echo "<<<<<<< HEAD
- <div class=\"sidebar-menu\">
-=======
-        <div class=\"sidebar-menu\">
->>>>>>> dev-interface
+        echo "        <div class=\"sidebar-menu\">
             <div class=\"sidebar-header\">
                 <div class=\"logo\">
                     <a href=\"#\"><img src=\"assets/images/icon/logo.png\" alt=\"logo\"></a>
@@ -40,17 +36,6 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
                 <div class=\"menu-inner\">
                     <nav>
                         <ul class=\"metismenu\" id=\"menu\">
-<<<<<<< HEAD
-                            <li class=\"active\">
-                                <a href=\"javascript:void(0)\" aria-expanded=\"true\"><i class=\"fa fa-dashboard\"></i><span>Dashboard</span></a>
-                                <ul class=\"collapse\">
-                                    <li class=\"active\"><a href=\"#\">Active Menu Item</a></li>
-                                    <li><a href=\"#\">Menuitem 2</a></li>
-                                    <li><a href=\"#\">Menuitem 3</a></li>
-                                </ul>
-                            </li>
-                            <li>
-=======
                             <li>
                                 <a href=\"javascript:void(0)\" aria-expanded=\"true\"><i class=\"fa fa-users\"></i><span>Individus</span></a>
                                 <ul class=\"collapse\">
@@ -62,14 +47,13 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
                             <li>
                                 <a href=\"javascript:void(0)\" aria-expanded=\"true\"><i class=\"fa fa-home\"></i><span>Foyers</span></a>
                                 <ul class=\"collapse\">
-                                    <li class=\"active\"><a href=\"/foyer/create\">Nouveau foyer</a></li>
+                                    <li class=\"active\"><a href=\"/foyer\">Nouveau foyer</a></li>
                                     <li class=\"active\"><a href=\"/foyer\">List foyers</a></li>
                                    
                                 </ul>
                             </li>
                            
                             <li>
->>>>>>> dev-interface
                                 <a href=\"javascript:void(0)\" aria-expanded=\"true\"><i class=\"fa fa-align-left\"></i>
                                     <span>Multi
                                         level menu</span></a>
@@ -91,11 +75,6 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-
-
-         <div class=\"offset-area\">
-=======
         <!-- sidebar menu area end -->
         <!-- main content area start -->
         <div class=\"main-content\">
@@ -205,7 +184,6 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
             </div>
 
               <div class=\"offset-area\">
->>>>>>> dev-interface
         <div class=\"offset-close\"><i class=\"fa fa-close\"></i></div>
         <ul class=\"nav offset-menu-tab\">
             <li><a class=\"active\" data-toggle=\"tab\" href=\"#activity\">Activity</a></li>
@@ -307,11 +285,7 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
 
     public function getSourceContext()
     {
-        return new Twig_Source("<<<<<<< HEAD
- <div class=\"sidebar-menu\">
-=======
-        <div class=\"sidebar-menu\">
->>>>>>> dev-interface
+        return new Twig_Source("        <div class=\"sidebar-menu\">
             <div class=\"sidebar-header\">
                 <div class=\"logo\">
                     <a href=\"#\"><img src=\"assets/images/icon/logo.png\" alt=\"logo\"></a>
@@ -321,17 +295,6 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
                 <div class=\"menu-inner\">
                     <nav>
                         <ul class=\"metismenu\" id=\"menu\">
-<<<<<<< HEAD
-                            <li class=\"active\">
-                                <a href=\"javascript:void(0)\" aria-expanded=\"true\"><i class=\"fa fa-dashboard\"></i><span>Dashboard</span></a>
-                                <ul class=\"collapse\">
-                                    <li class=\"active\"><a href=\"#\">Active Menu Item</a></li>
-                                    <li><a href=\"#\">Menuitem 2</a></li>
-                                    <li><a href=\"#\">Menuitem 3</a></li>
-                                </ul>
-                            </li>
-                            <li>
-=======
                             <li>
                                 <a href=\"javascript:void(0)\" aria-expanded=\"true\"><i class=\"fa fa-users\"></i><span>Individus</span></a>
                                 <ul class=\"collapse\">
@@ -343,14 +306,13 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
                             <li>
                                 <a href=\"javascript:void(0)\" aria-expanded=\"true\"><i class=\"fa fa-home\"></i><span>Foyers</span></a>
                                 <ul class=\"collapse\">
-                                    <li class=\"active\"><a href=\"/foyer/create\">Nouveau foyer</a></li>
+                                    <li class=\"active\"><a href=\"/foyer\">Nouveau foyer</a></li>
                                     <li class=\"active\"><a href=\"/foyer\">List foyers</a></li>
                                    
                                 </ul>
                             </li>
                            
                             <li>
->>>>>>> dev-interface
                                 <a href=\"javascript:void(0)\" aria-expanded=\"true\"><i class=\"fa fa-align-left\"></i>
                                     <span>Multi
                                         level menu</span></a>
@@ -372,11 +334,6 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
                 </div>
             </div>
         </div>
-<<<<<<< HEAD
-
-
-         <div class=\"offset-area\">
-=======
         <!-- sidebar menu area end -->
         <!-- main content area start -->
         <div class=\"main-content\">
@@ -486,7 +443,6 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
             </div>
 
               <div class=\"offset-area\">
->>>>>>> dev-interface
         <div class=\"offset-close\"><i class=\"fa fa-close\"></i></div>
         <ul class=\"nav offset-menu-tab\">
             <li><a class=\"active\" data-toggle=\"tab\" href=\"#activity\">Activity</a></li>

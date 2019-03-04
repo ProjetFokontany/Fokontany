@@ -14,6 +14,9 @@ individu :
     path : /individu
     controller : App\Controller\IndividuController::index
 
+individuCreate : 
+    path : /individu/create
+    controller : App\Controller\IndividuController::create
 
 foyer :
   path : /foyer

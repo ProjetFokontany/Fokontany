@@ -48,14 +48,15 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
         // line 31
         $this->loadTemplate("include/sidebar.html.twig", "base.html.twig", 31)->display($context);
         // line 32
-        echo "                        <div class=\"main-content-inner\" style=\"margin-bottom:2%;\">                    
+        echo "
+                        <div class=\"main-content-inner\" style=\"margin-bottom:2%;\">                    
                           
                                     <div class=\"row\">
                                         <div class=\"col-lg-12 mt-5\"> 
                                               ";
-        // line 36
+        // line 37
         $this->displayBlock('body', $context, $blocks);
-        // line 39
+        // line 40
         echo "                                        </div>
                              </div>       
                             
@@ -70,9 +71,9 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
            
         </div>
         ";
-        // line 52
+        // line 53
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 80
+        // line 81
         echo "    </body>
 </html>
 ";
@@ -155,7 +156,7 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
 
     }
 
-    // line 36
+    // line 37
     public function block_body($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -164,7 +165,7 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
-        // line 37
+        // line 38
         echo "
                                               ";
         
@@ -175,7 +176,7 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
 
     }
 
-    // line 52
+    // line 53
     public function block_javascripts($context, array $blocks = [])
     {
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
@@ -184,29 +185,29 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 53
+        // line 54
         echo "             <script src=\"";
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/vendor/jquery-2.2.4.min.js"), "html", null, true);
         echo "\"></script>
             <!-- bootstrap 4 js -->
             <script src=\"";
-        // line 55
+        // line 56
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/popper.min.js"), "html", null, true);
         echo "\"></script>
             <script src=\"";
-        // line 56
+        // line 57
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/bootstrap.min.js"), "html", null, true);
         echo "\"></script>
             <script src=\"";
-        // line 57
+        // line 58
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/owl.carousel.min.js"), "html", null, true);
         echo "\"></script>
             <script src=\"";
-        // line 58
+        // line 59
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/metisMenu.min.js"), "html", null, true);
         echo "\"></script>
             <script src=\"";
-        // line 59
+        // line 60
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/jquery.slimscroll.min.js"), "html", null, true);
         echo "\"></script>
             <script src=\"assets/js/jquery.slicknav.min.js\"></script>
@@ -223,21 +224,21 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
             </script>
             <!-- all line chart activation -->
             <script src=\"";
-        // line 73
+        // line 74
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/line-chart.js"), "html", null, true);
         echo "\"></script>
             <!-- all pie chart -->
             <script src=\"";
-        // line 75
+        // line 76
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/pie-chart.js"), "html", null, true);
         echo "\"></script>
             <!-- others plugins -->
             <script src=\"";
-        // line 77
+        // line 78
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/plugins.js"), "html", null, true);
         echo "\"></script>
             <script src=\"";
-        // line 78
+        // line 79
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/js/scripts.js"), "html", null, true);
         echo "\"></script>
         ";
@@ -261,7 +262,7 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
 
     public function getDebugInfo()
     {
-        return array (  241 => 78,  237 => 77,  232 => 75,  227 => 73,  210 => 59,  206 => 58,  202 => 57,  198 => 56,  194 => 55,  188 => 53,  179 => 52,  168 => 37,  159 => 36,  147 => 23,  142 => 21,  138 => 20,  134 => 19,  130 => 18,  122 => 13,  118 => 12,  114 => 11,  110 => 10,  106 => 9,  102 => 8,  97 => 7,  88 => 6,  76 => 80,  74 => 52,  59 => 39,  57 => 36,  51 => 32,  49 => 31,  41 => 25,  39 => 6,  32 => 1,);
+        return array (  242 => 79,  238 => 78,  233 => 76,  228 => 74,  211 => 60,  207 => 59,  203 => 58,  199 => 57,  195 => 56,  189 => 54,  180 => 53,  169 => 38,  160 => 37,  148 => 23,  143 => 21,  139 => 20,  135 => 19,  131 => 18,  123 => 13,  119 => 12,  115 => 11,  111 => 10,  107 => 9,  103 => 8,  98 => 7,  89 => 6,  77 => 81,  75 => 53,  60 => 40,  58 => 37,  51 => 32,  49 => 31,  41 => 25,  39 => 6,  32 => 1,);
     }
 
     public function getSourceContext()
@@ -297,6 +298,7 @@ class __TwigTemplate_0188acd5acf18a7b7b990b7e64df384a4b829cd378b69a541bc6b5e9cb5
             
                 <div class=\"page-container\">
                      {% include \"include/sidebar.html.twig\" %}
+
                         <div class=\"main-content-inner\" style=\"margin-bottom:2%;\">                    
                           
                                     <div class=\"row\">
