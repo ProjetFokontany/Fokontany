@@ -15,6 +15,14 @@ class IndividuController extends AbstractController{
     public function index(): Response {
         return $this->render('pages/individu/index.html.twig');
     }
+    
+    /**
+     * @Route("/individu/create/")
+     */
+
+    public function create() : Response {
+        return $this->render('pages/individu/create.html.twig');
+    }
 
     /**
      * @Route("/individu/search={search}","")

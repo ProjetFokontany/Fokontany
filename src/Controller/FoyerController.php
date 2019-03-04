@@ -16,6 +16,10 @@ class FoyerController extends AbstractController{
      return $this->render('pages/foyer/index.html.twig');
     }
 
+    public function create() :Response{
+        return $this->render('pages/foyer/create.html.twig');
+    }
+
     /**
      * @Route("/foyer/search={search}","")
      */

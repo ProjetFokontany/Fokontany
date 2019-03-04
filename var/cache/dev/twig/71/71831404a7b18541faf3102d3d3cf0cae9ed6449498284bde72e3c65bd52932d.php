@@ -54,7 +54,7 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
                             <li>
                                 <a href=\"javascript:void(0)\" aria-expanded=\"true\"><i class=\"fa fa-users\"></i><span>Individus</span></a>
                                 <ul class=\"collapse\">
-                                    <li class=\"active\"><a href=\"/individu\">Nouveau individu</a></li>
+                                    <li class=\"active\"><a href=\"/individu/create\">Nouveau individu</a></li>
                                     <li class=\"active\"><a href=\"/individu\">List individus</a></li>
                                    
                                 </ul>
@@ -62,7 +62,7 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
                             <li>
                                 <a href=\"javascript:void(0)\" aria-expanded=\"true\"><i class=\"fa fa-home\"></i><span>Foyers</span></a>
                                 <ul class=\"collapse\">
-                                    <li class=\"active\"><a href=\"/foyer\">Nouveau foyer</a></li>
+                                    <li class=\"active\"><a href=\"/foyer/create\">Nouveau foyer</a></li>
                                     <li class=\"active\"><a href=\"/foyer\">List foyers</a></li>
                                    
                                 </ul>
@@ -335,7 +335,7 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
                             <li>
                                 <a href=\"javascript:void(0)\" aria-expanded=\"true\"><i class=\"fa fa-users\"></i><span>Individus</span></a>
                                 <ul class=\"collapse\">
-                                    <li class=\"active\"><a href=\"/individu\">Nouveau individu</a></li>
+                                    <li class=\"active\"><a href=\"/individu/create\">Nouveau individu</a></li>
                                     <li class=\"active\"><a href=\"/individu\">List individus</a></li>
                                    
                                 </ul>
@@ -343,7 +343,7 @@ class __TwigTemplate_31fc6e79adaa378d384896e635f593f6d52a0c0abfc9d375c06d97dba94
                             <li>
                                 <a href=\"javascript:void(0)\" aria-expanded=\"true\"><i class=\"fa fa-home\"></i><span>Foyers</span></a>
                                 <ul class=\"collapse\">
-                                    <li class=\"active\"><a href=\"/foyer\">Nouveau foyer</a></li>
+                                    <li class=\"active\"><a href=\"/foyer/create\">Nouveau foyer</a></li>
                                     <li class=\"active\"><a href=\"/foyer\">List foyers</a></li>
                                    
                                 </ul>

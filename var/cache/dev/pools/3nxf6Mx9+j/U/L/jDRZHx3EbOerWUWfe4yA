@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 <?php return array(PHP_INT_MAX, 1551253303);
+=======
+<?php return array(PHP_INT_MAX, 1551367119);
+>>>>>>> dev-interface
