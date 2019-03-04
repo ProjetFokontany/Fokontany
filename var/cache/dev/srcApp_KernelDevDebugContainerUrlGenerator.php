@@ -25,6 +25,7 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         'fokontany.liste' => array(array(), array('_controller' => 'App\\Controller\\FokontanyController::index'), array(), array(array('text', '/fokontany')), array(), array()),
         'foyer.liste' => array(array(), array('_controller' => 'App\\Controller\\FoyerController::index'), array(), array(array('text', '/foyer')), array(), array()),
         'individu.liste' => array(array(), array('_controller' => 'App\\Controller\\IndividuController::index'), array(), array(array('text', '/individu')), array(), array()),
+        'app_individu_create' => array(array(), array('_controller' => 'App\\Controller\\IndividuController::create'), array(), array(array('text', '/individu/create/')), array(), array()),
         'quartier.liste' => array(array(), array('_controller' => 'App\\Controller\\QuartierController::index'), array(), array(array('text', '/quartier')), array(), array()),
         'login' => array(array(), array('_controller' => 'App\\Controller\\SecurityController::login'), array(), array(array('text', '/login')), array(), array()),
         '_twig_error_test' => array(array('code', '_format'), array('_controller' => 'twig.controller.preview_error::previewErrorPageAction', '_format' => 'html'), array('code' => '\\d+'), array(array('variable', '.', '[^/]++', '_format', true), array('variable', '/', '\\d+', 'code', true), array('text', '/_error')), array(), array()),

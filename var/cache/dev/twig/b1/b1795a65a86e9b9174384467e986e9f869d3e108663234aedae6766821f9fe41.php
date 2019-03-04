@@ -50,7 +50,7 @@ class __TwigTemplate_95921b7621d23e251a00d35b2cd612f4105ec0cfccbcc3b92f0a9f9d085
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "body"));
 
         // line 4
-        echo "                <h1>Page individus</h1>
+        echo "    
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -80,7 +80,7 @@ class __TwigTemplate_95921b7621d23e251a00d35b2cd612f4105ec0cfccbcc3b92f0a9f9d085
         return new Twig_Source("{% extends 'base.html.twig' %}
 
 {% block body %}
-                <h1>Page individus</h1>
+    
 {% endblock %}", "pages/individu/index.html.twig", "F:\\ProjetHackathon\\Fokontany\\templates\\pages\\individu\\index.html.twig");
     }
 }
