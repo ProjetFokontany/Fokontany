@@ -2599,7 +2599,7 @@
       <factory class="Doctrine\ORM\EntityManager" method="create"/>
     </service>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory" public="false">
-      <argument type="service" id=".service_locator..C_1HIE"/>
+      <argument type="service" id=".service_locator.2JsTbB9"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -3933,6 +3933,17 @@
     <service id="EasyCorp\EasyLog\EasyLogHandler" class="EasyCorp\EasyLog\EasyLogHandler" public="false">
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/log/dev.log</argument>
     </service>
+    <service id=".abstract.instanceof.App\Repository\AppartementsRepository" class="App\Repository\AppartementsRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\CommuneRepository" class="App\Repository\CommuneRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\DepenseRepository" class="App\Repository\DepenseRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\FokontanyRepository" class="App\Repository\FokontanyRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\FoyerRepository" class="App\Repository\FoyerRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\IndividuRepository" class="App\Repository\IndividuRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\NiveauEtudeRepository" class="App\Repository\NiveauEtudeRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\QuartiersRepository" class="App\Repository\QuartiersRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\SecteurActiviteRepository" class="App\Repository\SecteurActiviteRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\SituationMatrimonialeRepository" class="App\Repository\SituationMatrimonialeRepository" autowire="true" autoconfigure="true" abstract="true"/>
+    <service id=".abstract.instanceof.App\Repository\TravaillerRepository" class="App\Repository\TravaillerRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\AppartementController" class="App\Controller\AppartementController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Controller\CommuneController" class="App\Controller\CommuneController" autowire="true" autoconfigure="true" abstract="true"/>
@@ -4030,9 +4041,20 @@
         <argument key="doctrine.orm.default_listeners.attach_entity_listeners" type="service" id="doctrine.orm.default_listeners.attach_entity_listeners"/>
       </argument>
     </service>
-    <service id=".service_locator..C_1HIE" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.2JsTbB9" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
+        <argument key="App\Repository\AppartementsRepository" type="service" id="App\Repository\AppartementsRepository"/>
+        <argument key="App\Repository\CommuneRepository" type="service" id="App\Repository\CommuneRepository"/>
+        <argument key="App\Repository\DepenseRepository" type="service" id="App\Repository\DepenseRepository"/>
+        <argument key="App\Repository\FokontanyRepository" type="service" id="App\Repository\FokontanyRepository"/>
+        <argument key="App\Repository\FoyerRepository" type="service" id="App\Repository\FoyerRepository"/>
+        <argument key="App\Repository\IndividuRepository" type="service" id="App\Repository\IndividuRepository"/>
+        <argument key="App\Repository\NiveauEtudeRepository" type="service" id="App\Repository\NiveauEtudeRepository"/>
+        <argument key="App\Repository\QuartiersRepository" type="service" id="App\Repository\QuartiersRepository"/>
+        <argument key="App\Repository\SecteurActiviteRepository" type="service" id="App\Repository\SecteurActiviteRepository"/>
+        <argument key="App\Repository\SituationMatrimonialeRepository" type="service" id="App\Repository\SituationMatrimonialeRepository"/>
+        <argument key="App\Repository\TravaillerRepository" type="service" id="App\Repository\TravaillerRepository"/>
         <argument key="App\Repository\UserRepository" type="service" id="App\Repository\UserRepository"/>
       </argument>
     </service>
@@ -4413,6 +4435,61 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
+    </service>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\AppartementsRepository" class="App\Repository\AppartementsRepository" autowire="true" abstract="true"/>
+    <service id="App\Repository\AppartementsRepository" class="App\Repository\AppartementsRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\CommuneRepository" class="App\Repository\CommuneRepository" autowire="true" abstract="true"/>
+    <service id="App\Repository\CommuneRepository" class="App\Repository\CommuneRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\DepenseRepository" class="App\Repository\DepenseRepository" autowire="true" abstract="true"/>
+    <service id="App\Repository\DepenseRepository" class="App\Repository\DepenseRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\FokontanyRepository" class="App\Repository\FokontanyRepository" autowire="true" abstract="true"/>
+    <service id="App\Repository\FokontanyRepository" class="App\Repository\FokontanyRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\FoyerRepository" class="App\Repository\FoyerRepository" autowire="true" abstract="true"/>
+    <service id="App\Repository\FoyerRepository" class="App\Repository\FoyerRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\IndividuRepository" class="App\Repository\IndividuRepository" autowire="true" abstract="true"/>
+    <service id="App\Repository\IndividuRepository" class="App\Repository\IndividuRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\NiveauEtudeRepository" class="App\Repository\NiveauEtudeRepository" autowire="true" abstract="true"/>
+    <service id="App\Repository\NiveauEtudeRepository" class="App\Repository\NiveauEtudeRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\QuartiersRepository" class="App\Repository\QuartiersRepository" autowire="true" abstract="true"/>
+    <service id="App\Repository\QuartiersRepository" class="App\Repository\QuartiersRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\SecteurActiviteRepository" class="App\Repository\SecteurActiviteRepository" autowire="true" abstract="true"/>
+    <service id="App\Repository\SecteurActiviteRepository" class="App\Repository\SecteurActiviteRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\SituationMatrimonialeRepository" class="App\Repository\SituationMatrimonialeRepository" autowire="true" abstract="true"/>
+    <service id="App\Repository\SituationMatrimonialeRepository" class="App\Repository\SituationMatrimonialeRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
+    </service>
+    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\TravaillerRepository" class="App\Repository\TravaillerRepository" autowire="true" abstract="true"/>
+    <service id="App\Repository\TravaillerRepository" class="App\Repository\TravaillerRepository" autowire="true" autoconfigure="true">
+      <tag name="doctrine.repository_service"/>
+      <argument type="service" id="doctrine"/>
     </service>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" abstract="true"/>
     <service id="App\Repository\UserRepository" class="App\Repository\UserRepository" autowire="true" autoconfigure="true">
