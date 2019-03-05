@@ -14,16 +14,8 @@ if (!\class_exists(srcApp_KernelDevDebugContainer::class, false)) {
     \class_alias(\Container3Zq61n9\srcApp_KernelDevDebugContainer::class, srcApp_KernelDevDebugContainer::class, false);
 }
 
-<<<<<<< Updated upstream
-return new \Container5tfktVW\srcApp_KernelDevDebugContainer(array(
-    'container.build_hash' => '5tfktVW',
-    'container.build_id' => 'd767b26a',
-    'container.build_time' => 1551698764,
-), __DIR__.\DIRECTORY_SEPARATOR.'Container5tfktVW');
-=======
 return new \Container3Zq61n9\srcApp_KernelDevDebugContainer(array(
     'container.build_hash' => '3Zq61n9',
-    'container.build_id' => '38b3f988',
-    'container.build_time' => 1551710410,
+    'container.build_id' => 'ffbb1def',
+    'container.build_time' => 1551711934,
 ), __DIR__.\DIRECTORY_SEPARATOR.'Container3Zq61n9');
->>>>>>> Stashed changes

@@ -6,13 +6,8 @@
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.debug">true</parameter>
     <parameter key="kernel.name">src</parameter>
-<<<<<<< Updated upstream
-    <parameter key="kernel.cache_dir">F:/ProjetHackathon/Fokontany/var/cache/dev</parameter>
-    <parameter key="kernel.logs_dir">F:\ProjetHackathon\Fokontany\var\log</parameter>
-=======
     <parameter key="kernel.cache_dir">/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev</parameter>
     <parameter key="kernel.logs_dir">/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/log</parameter>
->>>>>>> Stashed changes
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="DoctrineCacheBundle">Doctrine\Bundle\DoctrineCacheBundle\DoctrineCacheBundle</parameter>
@@ -103,36 +98,22 @@
       <parameter key="cookie_samesite">lax</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-<<<<<<< Updated upstream
-    <parameter key="session.save_path">F:/ProjetHackathon/Fokontany/var/cache/dev/sessions</parameter>
-=======
     <parameter key="session.save_path">/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/sessions</parameter>
->>>>>>> Stashed changes
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
     <parameter key="asset.request_context.base_path"></parameter>
     <parameter key="asset.request_context.secure">false</parameter>
     <parameter key="validator.mapping.cache.prefix"></parameter>
-<<<<<<< Updated upstream
-    <parameter key="validator.mapping.cache.file">F:/ProjetHackathon/Fokontany/var/cache/dev/validation.php</parameter>
-=======
     <parameter key="validator.mapping.cache.file">/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/validation.php</parameter>
->>>>>>> Stashed changes
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="translator.logging">false</parameter>
     <parameter key="translator.default_path">/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/translations</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_master_requests">false</parameter>
-<<<<<<< Updated upstream
-    <parameter key="profiler.storage.dsn">file:F:/ProjetHackathon/Fokontany/var/cache/dev/profiler</parameter>
-    <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">F:/ProjetHackathon/Fokontany/var/cache/dev/srcApp_KernelDevDebugContainer.xml</parameter>
-=======
     <parameter key="profiler.storage.dsn">file:/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/profiler</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
     <parameter key="debug.container.dump">/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/srcApp_KernelDevDebugContainer.xml</parameter>
->>>>>>> Stashed changes
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
@@ -140,11 +121,7 @@
     <parameter key="router.cache_class_prefix">srcApp_KernelDevDebugContainer</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
-<<<<<<< Updated upstream
-    <parameter key="serializer.mapping.cache.file">F:/ProjetHackathon/Fokontany/var/cache/dev/serialization.php</parameter>
-=======
     <parameter key="serializer.mapping.cache.file">/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/serialization.php</parameter>
->>>>>>> Stashed changes
     <parameter key="serializer.mapping.cache.prefix"></parameter>
     <parameter key="doctrine_cache.apc.class">Doctrine\Common\Cache\ApcCache</parameter>
     <parameter key="doctrine_cache.apcu.class">Doctrine\Common\Cache\ApcuCache</parameter>
@@ -253,11 +230,7 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
-<<<<<<< Updated upstream
-    <parameter key="doctrine.orm.proxy_dir">F:/ProjetHackathon/Fokontany/var/cache/dev/doctrine/orm/Proxies</parameter>
-=======
     <parameter key="doctrine.orm.proxy_dir">/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/doctrine/orm/Proxies</parameter>
->>>>>>> Stashed changes
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="doctrine_migrations.dir_name">/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/src/Migrations</parameter>
     <parameter key="doctrine_migrations.namespace">DoctrineMigrations</parameter>
@@ -278,11 +251,7 @@
     <parameter key="security.access.always_authenticate_before_granting">false</parameter>
     <parameter key="security.authentication.hide_user_not_found">true</parameter>
     <parameter key="swiftmailer.mailer.default.transport.name">dynamic</parameter>
-<<<<<<< Updated upstream
-    <parameter key="swiftmailer.spool.default.memory.path">F:/ProjetHackathon/Fokontany/var/cache/dev/swiftmailer/spool/default</parameter>
-=======
     <parameter key="swiftmailer.spool.default.memory.path">/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/swiftmailer/spool/default</parameter>
->>>>>>> Stashed changes
     <parameter key="swiftmailer.mailer.default.spool.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.plugin.impersonate">null</parameter>
     <parameter key="swiftmailer.mailer.default.single_address">null</parameter>
@@ -466,11 +435,7 @@
     <service id="cache_warmer" class="Symfony\Component\HttpKernel\CacheWarmer\CacheWarmerAggregate" public="true">
       <argument type="tagged" tag="kernel.cache_warmer"/>
       <argument>true</argument>
-<<<<<<< Updated upstream
-      <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/srcApp_KernelDevDebugContainerDeprecations.log</argument>
-=======
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/srcApp_KernelDevDebugContainerDeprecations.log</argument>
->>>>>>> Stashed changes
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer" public="true">
       <argument type="tagged" tag="kernel.cache_clearer"/>
@@ -706,11 +671,7 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-<<<<<<< Updated upstream
-      <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/pools</argument>
-=======
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/pools</argument>
->>>>>>> Stashed changes
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -739,11 +700,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-<<<<<<< Updated upstream
-      <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/pools</argument>
-=======
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/pools</argument>
->>>>>>> Stashed changes
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
@@ -810,13 +767,8 @@
     <service id="translator.selector" class="Symfony\Component\Translation\MessageSelector" public="false">
       <deprecated>The "%service_id%" service is deprecated since Symfony 4.2, use "identity_translator" instead.</deprecated>
     </service>
-<<<<<<< Updated upstream
-    <service id=".1_NativeFileSessionHandler~suhtnSc" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
-      <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/sessions</argument>
-=======
     <service id=".1_NativeFileSessionHandler~Y9.82LW" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler" public="false">
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/sessions</argument>
->>>>>>> Stashed changes
     </service>
     <service id="session" class="Symfony\Component\HttpFoundation\Session\Session" public="true">
       <argument type="service" id="session.storage.native"/>
@@ -839,11 +791,7 @@
     <service id="session.flash_bag" class="Symfony\Component\HttpFoundation\Session\Flash\FlashBag" public="false"/>
     <service id="session.attribute_bag" class="Symfony\Component\HttpFoundation\Session\Attribute\AttributeBag" public="false"/>
     <service id="session.storage.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage" public="false">
-<<<<<<< Updated upstream
-      <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/sessions</argument>
-=======
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/sessions</argument>
->>>>>>> Stashed changes
       <argument>MOCKSESSID</argument>
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
@@ -996,13 +944,8 @@
     <service id="assets.json_manifest_version_strategy" class="Symfony\Component\Asset\VersionStrategy\JsonManifestVersionStrategy" public="false" abstract="true">
       <argument></argument>
     </service>
-<<<<<<< Updated upstream
-    <service id=".1_PhpArrayAdapter~VntQW9w" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
-      <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/validation.php</argument>
-=======
     <service id=".1_PhpArrayAdapter~fN80n4a" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/validation.php</argument>
->>>>>>> Stashed changes
       <argument type="service" id="cache.validator"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -1037,11 +980,7 @@
     <service id="validator.mapping.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\ValidatorCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="validator.builder"/>
-<<<<<<< Updated upstream
-      <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/validation.php</argument>
-=======
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/validation.php</argument>
->>>>>>> Stashed changes
     </service>
     <service id="validator.mapping.cache.symfony" class="Symfony\Component\Validator\Mapping\Cache\Psr6Cache" public="false">
       <argument type="service" id=".1_PhpArrayAdapter~fN80n4a"/>
@@ -1098,11 +1037,7 @@
         </argument>
       </argument>
       <argument type="collection">
-<<<<<<< Updated upstream
-        <argument key="cache_dir">F:/ProjetHackathon/Fokontany/var/cache/dev/translations</argument>
-=======
         <argument key="cache_dir">/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/translations</argument>
->>>>>>> Stashed changes
         <argument key="debug">true</argument>
         <argument key="resource_files" type="collection">
           <argument key="af" type="collection">
@@ -1622,11 +1557,7 @@
       </call>
     </service>
     <service id="profiler.storage" class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage" public="false">
-<<<<<<< Updated upstream
-      <argument>file:F:/ProjetHackathon/Fokontany/var/cache/dev/profiler</argument>
-=======
       <argument>file:/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/profiler</argument>
->>>>>>> Stashed changes
     </service>
     <service id="profiler_listener" class="Symfony\Component\HttpKernel\EventListener\ProfilerListener" public="false">
       <tag name="kernel.event_subscriber"/>
@@ -1663,11 +1594,7 @@
       <tag name="data_collector" template="@WebProfiler/Collector/logger.html.twig" id="logger" priority="300"/>
       <tag name="monolog.logger" channel="profiler"/>
       <argument type="service" id="monolog.logger.profiler" on-invalid="ignore"/>
-<<<<<<< Updated upstream
-      <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/srcApp_KernelDevDebugContainer</argument>
-=======
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/srcApp_KernelDevDebugContainer</argument>
->>>>>>> Stashed changes
       <argument type="service" id="request_stack" on-invalid="ignore"/>
     </service>
     <service id="data_collector.time" class="Symfony\Component\HttpKernel\DataCollector\TimeDataCollector" public="false">
@@ -2258,11 +2185,7 @@
       <argument type="service" id=".service_locator.MAfdX1A.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
-<<<<<<< Updated upstream
-        <argument key="cache_dir">F:/ProjetHackathon/Fokontany/var/cache/dev</argument>
-=======
         <argument key="cache_dir">/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev</argument>
->>>>>>> Stashed changes
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
         <argument key="generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
@@ -2330,13 +2253,8 @@
       <argument type="service" id="file_locator"/>
       <argument type="service" id="routing.loader.annotation"/>
     </service>
-<<<<<<< Updated upstream
-    <service id=".2_PhpArrayAdapter~UedHFqQ" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
-      <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/annotations.php</argument>
-=======
     <service id=".2_PhpArrayAdapter~Ktp7IST" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/annotations.php</argument>
->>>>>>> Stashed changes
       <argument type="service" id="cache.annotations"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -2365,11 +2283,7 @@
     <service id="annotations.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\AnnotationsCacheWarmer" public="false">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="annotations.reader"/>
-<<<<<<< Updated upstream
-      <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/annotations.php</argument>
-=======
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/annotations.php</argument>
->>>>>>> Stashed changes
       <argument>#^Symfony\\(?:Component\\HttpKernel\\|Bundle\\FrameworkBundle\\Controller\\(?!AbstractController$|Controller$))#</argument>
       <argument>true</argument>
     </service>
@@ -2449,17 +2363,10 @@
           </service>
         </argument>
       </argument>
-<<<<<<< Updated upstream
-      <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/serialization.php</argument>
-    </service>
-    <service id="serializer.mapping.cache.symfony" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
-      <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/serialization.php</argument>
-=======
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/serialization.php</argument>
     </service>
     <service id="serializer.mapping.cache.symfony" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" public="false">
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/serialization.php</argument>
->>>>>>> Stashed changes
       <argument type="service" id="cache.serializer"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -3394,11 +3301,7 @@
           <argument>form_div_layout.html.twig</argument>
         </argument>
         <argument key="autoescape">name</argument>
-<<<<<<< Updated upstream
-        <argument key="cache">F:/ProjetHackathon/Fokontany/var/cache/dev/twig</argument>
-=======
         <argument key="cache">/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/twig</argument>
->>>>>>> Stashed changes
         <argument key="charset">UTF-8</argument>
         <argument key="paths" type="collection"/>
         <argument key="date" type="collection">
@@ -4239,11 +4142,7 @@
         <argument type="service" id="doctrine.orm.default_metadata_driver"/>
       </call>
       <call method="setProxyDir">
-<<<<<<< Updated upstream
-        <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/doctrine/orm/Proxies</argument>
-=======
         <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/doctrine/orm/Proxies</argument>
->>>>>>> Stashed changes
       </call>
       <call method="setProxyNamespace">
         <argument>Proxies</argument>
@@ -5219,11 +5118,7 @@
       <argument>+G0T+ew4Ug</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-<<<<<<< Updated upstream
-      <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/pools</argument>
-=======
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/pools</argument>
->>>>>>> Stashed changes
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -5235,11 +5130,7 @@
       <argument>z8L1Nm6o6C</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-<<<<<<< Updated upstream
-      <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/pools</argument>
-=======
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/pools</argument>
->>>>>>> Stashed changes
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -5251,11 +5142,7 @@
       <argument>z327FI43Mw</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-<<<<<<< Updated upstream
-      <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/pools</argument>
-=======
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/pools</argument>
->>>>>>> Stashed changes
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -5267,11 +5154,7 @@
       <argument>iIPmCWMSs7</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-<<<<<<< Updated upstream
-      <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/pools</argument>
-=======
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/pools</argument>
->>>>>>> Stashed changes
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -5282,11 +5165,7 @@
     <service id="cache.app.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter" public="false">
       <argument>D30pB6xgP4</argument>
       <argument>0</argument>
-<<<<<<< Updated upstream
-      <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/pools</argument>
-=======
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/pools</argument>
->>>>>>> Stashed changes
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
@@ -5300,11 +5179,7 @@
       <argument>usOSUzyINt</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-<<<<<<< Updated upstream
-      <argument>F:/ProjetHackathon/Fokontany/var/cache/dev/pools</argument>
-=======
       <argument>/home/bynan/Fianarana/Bosy/Projet/Hackathon2019/Fokontany3.0/Fokontany/var/cache/dev/pools</argument>
->>>>>>> Stashed changes
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
