@@ -18,6 +18,10 @@ individuCreate :
     path : /individu/create
     controller : App\Controller\IndividuController::create
 
+individuList :
+    path : /individu/list
+    controller : App\Controller\IndividuController::list
+
 foyer :
   path : /foyer
   controller : App\Controller\FoyerController::index
