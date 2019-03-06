@@ -13,11 +13,11 @@ class FoyerController extends AbstractController{
      * @var Response
      */
     public function index(): Response {
-        return $this->render('pages/foyer/index.html.twig');
+     return new Response ($this->renderView('pages/foyer/index.html.twig'));
     }
 
     public function create() :Response{
-        return $this->render('pages/foyer/create.html.twig');
+        return new Response ($this->renderView('pages/foyer/create.html.twig'));
     }
 
     /**

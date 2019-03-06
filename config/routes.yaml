@@ -14,6 +14,13 @@ individu :
     path : /individu
     controller : App\Controller\IndividuController::index
 
+individuCreate : 
+    path : /individu/create
+    controller : App\Controller\IndividuController::create
+
+individuList :
+    path : /individu/list
+    controller : App\Controller\IndividuController::list
 
 foyer :
   path : /foyer

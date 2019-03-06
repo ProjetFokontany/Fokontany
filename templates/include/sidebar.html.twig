@@ -1,7 +1,7 @@
         <div class="sidebar-menu">
             <div class="sidebar-header">
                 <div class="logo">
-                    <a href="#"><img src="assets/images/icon/logo.png" alt="logo"></a>
+                    <a href="#"><img src="{{asset('assets/images/icon/logo1.png')}}" alt="logo"></a>
                 </div>
             </div>
             <div class="main-menu">
@@ -12,14 +12,14 @@
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-users"></i><span>Individus</span></a>
                                 <ul class="collapse">
                                     <li class="active"><a href="/individu/create">Nouveau individu</a></li>
-                                    <li class="active"><a href="/individu">List individus</a></li>
+                                    <li class="active"><a href="/individu/list">List individus</a></li>
                                    
                                 </ul>
                             </li>
                             <li>
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-home"></i><span>Foyers</span></a>
                                 <ul class="collapse">
-                                    <li class="active"><a href="/foyer/create">Nouveau foyer</a></li>
+                                    <li class="active"><a href="/foyer">Nouveau foyer</a></li>
                                     <li class="active"><a href="/foyer">List foyers</a></li>
                                    
                                 </ul>
@@ -63,7 +63,7 @@
                         <div class="search-box pull-left">
                             <form action="#">
                                 <input type="text" name="search" placeholder="Search..." required>
-                                <i class="ti-search"></i>
+                                <i class=" fa fa-search"></i>
                             </form>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                                     <div class="nofity-list">
                                         <a href="#" class="notify-item">
                                             <div class="notify-thumb">
-                                                <img src="assets/images/author/author-img1.jpg" alt="image">
+                                                <img src="{{asset('assets/images/author/author-img1.jpg')}}" alt="image">
                                             </div>
                                             <div class="notify-text">
                                                 <p>Aglae Mayer</p>
@@ -143,7 +143,7 @@
                     </div>
                     <div class="col-sm-6 clearfix">
                         <div class="user-profile pull-right">
-                            <img class="avatar user-thumb" src="assets/images/author/avatar.png" alt="avatar">
+                            <img class="avatar user-thumb" src="{{asset('assets/images/author/avatar.png')}}" alt="avatar">
                             <h4 class="user-name dropdown-toggle" data-toggle="dropdown">Kumkum Rai <i class="fa fa-angle-down"></i></h4>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Message</a>

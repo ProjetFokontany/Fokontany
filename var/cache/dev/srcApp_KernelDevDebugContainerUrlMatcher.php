@@ -26,7 +26,10 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
                 array(array('_route' => 'individu.liste', '_controller' => 'App\\Controller\\IndividuController::index'), null, null, null, false, false, null),
                 array(array('_route' => 'individu', '_controller' => 'App\\Controller\\IndividuController::index'), null, null, null, false, false, null),
             ),
-            '/individu/create' => array(array(array('_route' => 'app_individu_create', '_controller' => 'App\\Controller\\IndividuController::create'), null, null, null, true, false, null)),
+            '/individu/create' => array(
+                array(array('_route' => 'app_individu_create', '_controller' => 'App\\Controller\\IndividuController::create'), null, null, null, true, false, null),
+                array(array('_route' => 'individuCreate', '_controller' => 'App\\Controller\\IndividuController::create'), null, null, null, false, false, null),
+            ),
             '/quartier' => array(array(array('_route' => 'quartier.liste', '_controller' => 'App\\Controller\\QuartierController::index'), null, null, null, false, false, null)),
             '/login' => array(array(array('_route' => 'login', '_controller' => 'App\\Controller\\SecurityController::login'), null, null, null, false, false, null)),
             '/_profiler' => array(array(array('_route' => '_profiler_home', '_controller' => 'web_profiler.controller.profiler::homeAction'), null, null, null, true, false, null)),
@@ -37,6 +40,7 @@ class srcApp_KernelDevDebugContainerUrlMatcher extends Symfony\Bundle\FrameworkB
             '/' => array(array(array('_route' => 'home', '_controller' => 'App\\Controller\\SecurityController::login'), null, null, null, false, false, null)),
             '/forgotPassword' => array(array(array('_route' => 'forgotpasword', '_controller' => 'App\\Controller\\SecurityController::forgotPassword'), null, null, null, false, false, null)),
             '/accueil' => array(array(array('_route' => 'index', '_controller' => 'App\\Controller\\PagesController::home'), null, null, null, false, false, null)),
+            '/individu/list' => array(array(array('_route' => 'individuList', '_controller' => 'App\\Controller\\IndividuController::list'), null, null, null, false, false, null)),
         );
         $this->regexpList = array(
             0 => '{^(?'
