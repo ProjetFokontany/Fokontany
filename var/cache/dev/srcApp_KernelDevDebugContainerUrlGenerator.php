@@ -47,6 +47,14 @@ class srcApp_KernelDevDebugContainerUrlGenerator extends Symfony\Component\Routi
         'individuCreate' => array(array(), array('_controller' => 'App\\Controller\\IndividuController::create'), array(), array(array('text', '/individu/create')), array(), array()),
         'individuList' => array(array(), array('_controller' => 'App\\Controller\\IndividuController::list'), array(), array(array('text', '/individu/list')), array(), array()),
         'foyer' => array(array(), array('_controller' => 'App\\Controller\\FoyerController::index'), array(), array(array('text', '/foyer')), array(), array()),
+        'foyerCreate' => array(array(), array('_controller' => 'App\\Controller\\FoyerController::create'), array(), array(array('text', '/foyer/create')), array(), array()),
+        'foyerList' => array(array(), array('_controller' => 'App\\Controller\\FoyerController::list'), array(), array(array('text', '/foyer/list')), array(), array()),
+        'appartement' => array(array(), array('_controller' => 'App\\Controller\\AppartementController::index'), array(), array(array('text', '/appartement')), array(), array()),
+        'appartementCreate' => array(array(), array('_controller' => 'App\\Controller\\AppartementController::create'), array(), array(array('text', '/appartement/create')), array(), array()),
+        'appartementList' => array(array(), array('_controller' => 'App\\Controller\\AppartementController::list'), array(), array(array('text', '/appartement/list')), array(), array()),
+        'quartier' => array(array(), array('_controller' => 'App\\Controller\\QuartierController::index'), array(), array(array('text', '/qaurtier')), array(), array()),
+        'quartierCreate' => array(array(), array('_controller' => 'App\\Controller\\QuartierController::create'), array(), array(array('text', '/quartier/create')), array(), array()),
+        'quartierList' => array(array(), array('_controller' => 'App\\Controller\\QuartierController::list'), array(), array(array('text', '/quartier/list')), array(), array()),
     );
         }
     }
