@@ -26,6 +26,40 @@ foyer :
   path : /foyer
   controller : App\Controller\FoyerController::index
 
+foyerCreate : 
+  path : /foyer/create
+  controller : App\Controller\FoyerController::create
+
+foyerList : 
+  path : /foyer/list 
+  controller : App\Controller\FoyerController::list
+
+appartement :
+  path : /appartement
+  controller : App\Controller\AppartementController::index
+
+appartementCreate : 
+  path : /appartement/create
+  controller : App\Controller\AppartementController::create
+
+appartementList : 
+  path : /appartement/list
+  controller : App\Controller\AppartementController::list
+
+quartier : 
+  path : /qaurtier
+  controller : App\Controller\QuartierController::index
+
+quartierCreate : 
+  path : /quartier/create
+  controller : App\Controller\QuartierController::create
+
+quartierList : 
+  path : /quartier/list
+  controller : App\Controller\QuartierController::list
+
+
+
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
