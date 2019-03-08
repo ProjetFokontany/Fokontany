@@ -13,8 +13,18 @@ class QuartierController extends AbstractController{
      * @var Response
      */
     public function index(): Response {
-        return $this->render('pages/quartier/index.html.twig');
+        return new Response ($this->renderView("pages/quartier/index.html.twig"));
     }
+
+    public function create() : Response {
+        return new Response ($this->renderView("pages/quartier/create.html.twig"));
+    }
+
+    public function list() : Response {
+        return new Response ($this->renderView("pages/quartier/list.html.twig"));
+    }
+
+
     /**
      * @Route("/quartier/search={search}","")
      */

@@ -1,0 +1,5 @@
+7cc6b9,127.0.0.1,GET,http://localhost:8000/individu/create/,1552040215,,200
+8c1308,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,1552040216,da4221,200
+da4221,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,1552040216,,404
+d9db39,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1552040216,26464b,200
+26464b,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1552040216,,404
