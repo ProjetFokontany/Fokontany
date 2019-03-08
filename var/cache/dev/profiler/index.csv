@@ -201,3 +201,16 @@ d769fa,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,15
 79a238,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1551775916,,404
 ba93ad,127.0.0.1,GET,http://localhost:8000/favicon.ico,1551776045,7a4ead,200
 7a4ead,127.0.0.1,GET,http://localhost:8000/favicon.ico,1551776045,,404
+2458d7,127.0.0.1,GET,http://localhost:8000/,1551952695,,200
+8bbe8d,127.0.0.1,GET,http://localhost:8000/vendor/bootstrap/js/bootstrap.min.js,1551952696,b1f7dd,200
+b1f7dd,127.0.0.1,GET,http://localhost:8000/vendor/bootstrap/js/bootstrap.min.js,1551952696,,404
+435409,127.0.0.1,GET,http://localhost:8000/vendor/countdowntime/countdowntime.js,1551952696,2dfec8,200
+2dfec8,127.0.0.1,GET,http://localhost:8000/vendor/countdowntime/countdowntime.js,1551952696,,404
+c4fe0a,127.0.0.1,GET,http://localhost:8000/js/main.js,1551952696,1bf79f,200
+1bf79f,127.0.0.1,GET,http://localhost:8000/js/main.js,1551952696,,404
+ecc338,127.0.0.1,GET,http://localhost:8000/vendor/bootstrap/js/bootstrap.min.js,1551952696,607844,200
+607844,127.0.0.1,GET,http://localhost:8000/vendor/bootstrap/js/bootstrap.min.js,1551952696,,404
+a28e3d,127.0.0.1,GET,http://localhost:8000/vendor/countdowntime/countdowntime.js,1551952696,4d1f13,200
+4d1f13,127.0.0.1,GET,http://localhost:8000/vendor/countdowntime/countdowntime.js,1551952696,,404
+5932bb,127.0.0.1,GET,http://localhost:8000/js/main.js,1551952697,433dd9,200
+433dd9,127.0.0.1,GET,http://localhost:8000/js/main.js,1551952697,,404
