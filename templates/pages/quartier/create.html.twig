@@ -1,0 +1,37 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    <div class="card">
+        <div class="card-body" >
+            <h3>Nouvelle quartier</h3>
+            <form>
+                    <div class="form-row align-items-center">
+                        <div class="col-sm-12 my-1">
+                            <label class="" for="inlineFormInputName">Nom du quatier</label>
+                            <input type="text" class="form-control" name="quartier" id="inputQuartier" placeholder="Entrer le nom du qartier ...">
+                        </div>
+                        <div class="col-sm-4 my-12">
+                            <label class="" for="inlineFormInputName">Localisation</label>
+                            <input type="text" class="form-control" name="localisation" id="inputLocatisation" placeholder="Locatisation du quartier">
+                        </div>
+                        <div class="col-sm-4 my-1">
+                            <label class="" for="inlineFormInputName">Nombre de foyer dans cette quartier</label>
+                            <input type="number" class="form-control" name="nombreFoyer" id="inputFNombreQuartier" placeholder="nombre de foyer" >
+                        </div>
+                         <div class="col-sm-4 my-1">
+                            <label class="" for="inlineFormInputName">Fokotany</label>
+                            <select class="form-control" name="fokotany" id="inputFokotany" >
+                                <option>Fokotany 1</option>
+                                <option>Fokotany 2</option>
+                            </select>
+                        </div>
+                        <br><br>
+
+                        <div class="col-auto my-1">
+                            <button type ="submit" class="btn btn-warning" >Enregistrer</button>
+                        </div>
+                        
+                    </div>
+                </form>
+        </div>
+    </div>
+{% endblock %}
