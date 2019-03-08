@@ -1,0 +1,43 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    <div class="card" >
+        <div class="card-body">
+            <h3>Nouvelle appartement</h3>
+
+            <form>
+                    <div class="form-row align-items-center">
+                        <div class="col-sm-12 my-1">
+                            <label class="" for="inlineFormInputName">Adresse</label>
+                            <input type="text" class="form-control" name="adresse" id="inputAdresse" placeholder="Adresse de l'appartement">
+                        </div>
+                        <div class="col-sm-6 my-1">
+                            <label class="" for="inlineFormInputName">Latitude</label>
+                            <input type="number" class="form-control" name="latitide" id="inputLongitude" placeholder="Latitde de l'appartement">
+                        </div>
+                        <div class="col-sm-6 my-1">
+                            <label class="" for="inlineFormInputName">Longitude</label>
+                            <input type="number" class="form-control" name="longitude" id="inputFamille" placeholder="Longitude de l'appartement" >
+                        </div>
+                         <div class="col-sm-6 my-1">
+                            <label class="" for="inlineFormInputName">Nombre de foyer dans l'appartement </label>
+                            <input type="number" class="form-control" name="nombreFoyer" id="inputNombreFoyer" placeholder="Nombre foyer">
+                        </div>
+                         <div class="col-sm-6 my-1">
+                            <label class="" for="inlineFormInputName">Dans quelle quartier</label>
+                                <select class="form-control" name="quartier" id="inputQuartier">
+                                    <option>Quartier 1 </option>
+                                    <option>Quartier 2 </option>
+                                </select>
+                        </div>
+                        <br><br>
+
+                        <div class="col-auto my-1">
+                            <button type ="submit" class="btn btn-success" >Enregistrer</button>
+                        </div>
+                        
+                    </div>
+                </form>
+
+        </div>
+    </div>
+{% endblock %}

@@ -3,71 +3,46 @@
        <div class="card">
         <div class="card-body">
             <h3>Nouveau foyer</h3>
-
             <form>
                     <div class="form-row align-items-center">
                         <div class="col-sm-6 my-1">
-                            <label class="" for="inlineFormInputName">Nom</label>
-                            <input type="text" class="form-control" name="nom" id="inputNom" placeholder="Nom de l'individu">
+                            <label class="" for="inlineFormInputName">Père</label>
+                            <input type="text" class="form-control" name="pere" id="inputPere" placeholder="nom du père">
                         </div>
                         <div class="col-sm-6 my-1">
-                            <label class="" for="inlineFormInputName">Prenom</label>
-                            <input type="text" class="form-control" name="prenom" id="inputPrenom" placeholder="prenom de l'individu">
+                            <label class="" for="inlineFormInputName">Mère</label>
+                            <input type="text" class="form-control" name="mere" id="inputMere" placeholder="nom de la mère">
                         </div>
-                        <div class="col-sm-3 my-1">
-                            <label class="" for="inlineFormInputName">Numéro CIN</label>
-                            <input type="number" class="form-control" name="numeroCin" id="inputCin" placeholder="numéro cin" >
+                        <div class="col-sm-4 my-1">
+                            <label class="" for="inlineFormInputName">Nombre du membre de la fammile</label>
+                            <input type="number" class="form-control" name="numeroCin" id="inputFamille" placeholder="numéro cin" >
                         </div>
-                         <div class="col-sm-3 my-1">
-                            <label class="" for="inlineFormInputName">Adresse</label>
-                            <input type="text" class="form-control" name="adress" id="inputAdresse" placeholder="adresse de l'individu">
+                         <div class="col-sm-4 my-1">
+                            <label class="" for="inlineFormInputName">Revenu père</label>
+                            <input type="number" class="form-control" name="revenuPere" id="inputRevenuPere" placeholder="Revenu père">
                         </div>
-                         <div class="col-sm-3 my-1">
-                            <label class="" for="inlineFormInputName">Fonction</label>
-                            <input type="text" class="form-control" name="adress" id="inputFonction" placeholder="adresse de l'individu">
+                         <div class="col-sm-4 my-1">
+                            <label class="" for="inlineFormInputName">Revenu Mère</label>
+                            <input type="number" class="form-control" name="revenuMere" id="inputFonction" placeholder="Revenu mère">
                         </div>
-                         <div class="col-sm-3 my-1">
-                            <label class="" for="inlineFormInputName">Date de naissance</label>
-                            <input type="date" class="form-control" name="dateNaiss" id="inputDateNaiss">
-                        </div>
-                         <div class="col-sm-3 my-1">
-                            <label class="" for="inlineFormInputName">Situation matrimonial</label>
+                        <div class="col-sm-6 my-1">
+                            <label class="" for="inlineFormInputName">Apparttement</label>
                             <select  class="form-control" name="secteurActivite" id="inputActivity" >
-                                <option>Célibataire</option>
-                                <option>Marié(e)</option>
-                                <option>Divocé(e)</option>
+                                <option>Apparttement 1</option>
+                                <option>SApparttement 2</option>
                             </select>
                         </div>
-                        <div class="col-sm-3 my-1">
-                            <label class="" for="inlineFormInputName">Secteur d'activité</label>
-                            <select  class="form-control" name="secteurActivite" id="inputActivity" >
-                                <option>Secteur primaire</option>
-                                <option>Secteur secondaire</option>
-                                <option>Secteur tertiaire</option>
-                            </select>
-                        </div>
-                        <div class="col-sm-3 my-1">
-                            <label class="" for="inlineFormInputName">Niveau d'étude</label>
+                        <div class="col-sm-6 my-1">
+                            <label class="" for="inlineFormInputName">Quartier</label>
                             <select  class="form-control" name="niveauEtude" id="inputEtude" >
-                                <option>CEPE</option>
-                                <option>BEPC</option>
-                                <option>BACC</option>
-                                <option>DTS - BTS</option>
+                                <option>Quartier 1</option>
+                                <option>Quartier 2</option>
                             </select>
                         </div>
-                        <div class="col-sm-3 my-1">
-                            <label class="" for="inlineFormInputName">Foyer</label>
-                            <select  class="form-control" name="foyer" id="inputEtude" >
-                                <option>Foyer 1</option>
-                                <option>Foyer 2</option>
-                            </select>
-                        </div>
-                        
-                        
                         <br><br>
 
                         <div class="col-auto my-1">
-                            <button type ="submit" class="btn btn-info" >Enregistrer</button>
+                            <button type ="submit" class="btn btn-primary" >Enregistrer</button>
                         </div>
                         
                     </div>
