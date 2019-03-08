@@ -12,9 +12,13 @@ class FoyerController extends AbstractController{
      * @Route("/foyer", name="foyer.liste")
      * @var Response
      */
-    // public function index(): Response {
-    //     return $this->render('pages/foyer/liste.html.twig');
-    // }
+    public function index(): Response {
+     return new Response ($this->renderView('pages/foyer/index.html.twig'));
+    }
+
+    public function create() :Response{
+        return new Response ($this->renderView('pages/foyer/create.html.twig'));
+    }
 
     /**
      * @Route("/foyer/search={search}","")

@@ -21,6 +21,6 @@ class PagesController extends AbstractController
 
     public function home()
     {
-        return new Response( $this->render('pages/home.html.twig')) ;
+        return new Response( $this->renderView('pages/home.html.twig')) ;
     }
 }
