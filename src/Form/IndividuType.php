@@ -20,7 +20,7 @@ class IndividuType extends AbstractType
             ->add('id_niveau_etude')
             ->add('id_situation_matrimoniale')
             ->add('id_foyer')
-            ->add('sexe',['masculin', 'feminin'])
+            ->add('sexe')
         ;
     }
 
