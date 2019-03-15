@@ -5,6 +5,8 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Form\IndividuType;
+use App\Entity\Individu;
 
 class IndividuController extends AbstractController{
 
@@ -20,8 +22,14 @@ class IndividuController extends AbstractController{
      * @Route("/individu/create/")
      */
 
-    public function create() : Response {
-        return new Response( $this->renderView('pages/individu/create.html.twig')) ;
+    public function create(Individu $individu = null) : Response {
+        
+        $form = $this->createForm(IndividuType::class, $individu);
+
+        return new Response( $this->renderView('pages/individu/create.html.twig',[
+                'formIndividu' => $form->createView()
+            ]
+        ));
     }
 
     public function list(): Response {

@@ -75,7 +75,7 @@ class User implements UserInterface
 
     public function getRoles(){
         return[
-            'ROLE_USER'
+            'ROLE_USER_FOKONTANY'
         ];
     }
 
