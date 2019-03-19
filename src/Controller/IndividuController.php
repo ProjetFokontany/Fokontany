@@ -7,32 +7,50 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Form\IndividuType;
 use App\Entity\Individu;
+use Symfony\Component\HttpFoundation\Request;
+use Doctrine\Common\Persistence\ObjectManager;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 
-class IndividuController extends AbstractController{
+class IndividuController extends AbstractController
+{
 
     /**
      * @Route("/individu", name="individu.liste")
      * @var Response
      */
-    public function index(): Response {
-        return new Response( $this->renderView('pages/individu/index.html.twig')) ;
+    public function index(): Response
+    {
+        return new Response($this->renderView('pages/individu/index.html.twig'));
     }
-    
+
     /**
-     * @Route("/individu/create/")
+     * @Route("/individu/create/", name = "individu_create")
      */
 
-    public function create(Individu $individu = null) : Response {
-        
+    public function create(Individu $individu = null, Request $request, ObjectManager $manager)
+    {
+        $individu = new Individu();
         $form = $this->createForm(IndividuType::class, $individu);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $manager->persist($individu);
+            $manager->flush();
+            return $this->redirectToRoute('individu_liste');
+        }
 
-        return new Response( $this->renderView('pages/individu/create.html.twig',[
+        return new Response($this->renderView(
+            'pages/individu/create.html.twig',
+            [
                 'formIndividu' => $form->createView()
             ]
         ));
     }
 
-    public function list(): Response {
+    /**
+     * @Route("/individu/liste", name = "individu_liste")
+     */
+    public function list(): Response
+    {
         return new Response($this->renderView('pages/individu/list.html.twig'));
     }
 
