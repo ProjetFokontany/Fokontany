@@ -56,6 +56,11 @@ class Individu
      */
     private $id_foyer;
 
+    /**
+     * @ORM\Column(type="string", length=20)
+     */
+    private $sexe;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -153,6 +158,18 @@ class Individu
     public function setIdFoyer(?Foyer $id_foyer): self
     {
         $this->id_foyer = $id_foyer;
+
+        return $this;
+    }
+
+    public function getSexe(): ?string
+    {
+        return $this->sexe;
+    }
+
+    public function setSexe(string $sexe): self
+    {
+        $this->sexe = $sexe;
 
         return $this;
     }
