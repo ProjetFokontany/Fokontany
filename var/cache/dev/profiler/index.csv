@@ -285,3 +285,13 @@ e21efc,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,15
 9f80df,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,1552031895,,404
 e1892a,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1552031895,f0ba75,200
 f0ba75,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1552031895,,404
+14f17e,127.0.0.1,GET,http://localhost:8000/individu/create/,1552032451,,200
+468a50,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,1552032453,8990d3,200
+8990d3,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,1552032453,,404
+5144a8,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1552032453,dabd5e,200
+dabd5e,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1552032453,,404
+ab2ec2,127.0.0.1,GET,http://localhost:8000/individu/create/,1552036702,,200
+9339eb,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,1552036705,26fe8a,200
+26fe8a,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.woff?-fvbane=,1552036705,,404
+b328dd,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1552036705,3bd9ba,200
+3bd9ba,127.0.0.1,GET,http://localhost:8000/assets/fonts/themify.ttf?-fvbane=,1552036705,,404
