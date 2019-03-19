@@ -27,7 +27,7 @@ class IndividuController extends AbstractController
      * @Route("/individu/create/", name = "individu_create")
      */
 
-    public function create(Individu $individu = null, Request $request, ObjectManager $manager)
+    public function create(Request $request, ObjectManager $manager)
     {
         $individu = new Individu();
         $form = $this->createForm(IndividuType::class, $individu);

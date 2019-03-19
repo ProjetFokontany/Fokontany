@@ -13,6 +13,7 @@ use App\Entity\SituationMatrimoniale;
 use App\Entity\NiveauEtude;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use App\Entity\Foyer;
+use Symfony\Component\Form\Extension\Core\Type\BirthdayType;
 
 class IndividuType extends AbstractType
 {
@@ -33,8 +34,7 @@ class IndividuType extends AbstractType
             ])
             ->add('numero_cin')
             ->add('fonction')
-            ->add('date_naiss', DateType::class, [
-                'years' => range(1900,$year)
+            ->add('date_naiss', BirthdayType::class, [
             ])
             ->add('id_situation_matrimoniale', EntityType::class, [
                 'class' => SituationMatrimoniale::class,
