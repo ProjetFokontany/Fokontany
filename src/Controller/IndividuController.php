@@ -10,26 +10,34 @@ use App\Entity\Individu;
 use Symfony\Component\HttpFoundation\Request;
 use Doctrine\Common\Persistence\ObjectManager;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
+use App\Repository\IndividuRepository;
 
 class IndividuController extends AbstractController
 {
 
     /**
-     * @Route("/individu", name="individu.liste")
+     * @Route("/individu/liste", name="individu_liste")
      * @var Response
      */
-    public function index(): Response
+    public function list(IndividuRepository $repo): Response
     {
-        return new Response($this->renderView('pages/individu/index.html.twig'));
+        $individus = $repo->findAll();
+        return new Response($this->renderView('pages/individu/list.html.twig',[
+            'controller_name' => 'IndividuController',
+            'individus'        => $individus
+        ]));
     }
 
     /**
      * @Route("/individu/create/", name = "individu_create")
+     * @Route("/individu/{id}/edit", name="individu_edit")
      */
 
-    public function create(Request $request, ObjectManager $manager)
+    public function form(Individu $individu = null, Request $request, ObjectManager $manager)
     {
-        $individu = new Individu();
+        if(!$individu){ 
+            $individu = new Individu();
+        }
         $form = $this->createForm(IndividuType::class, $individu);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
@@ -41,18 +49,21 @@ class IndividuController extends AbstractController
         return new Response($this->renderView(
             'pages/individu/create.html.twig',
             [
-                'formIndividu' => $form->createView()
+                'formIndividu' => $form->createView(),
+                'editMode' => $individu->getId() !== null
             ]
         ));
     }
 
-    /**
-     * @Route("/individu/liste", name = "individu_liste")
-     */
-    public function list(): Response
-    {
-        return new Response($this->renderView('pages/individu/list.html.twig'));
-    }
+
+    // /**
+    //  * @Route("/individu/{id}","individu_show")
+    //  */
+
+    // public function detail($id): Response {
+    //     return $this->render('pages/individu/detail.html.twig');
+    // }
+
 
     /**
      * @Route("/individu/search={search}","")
@@ -85,11 +96,4 @@ class IndividuController extends AbstractController
     //     return $this->render('pages/individu/liste.html.twig');
     // }
 
-    /**
-     * @Route("/individu/detail","")
-     */
-
-    // public function detail($id): Response {
-    //     return $this->render('pages/individu/detail.html.twig');
-    // }
 }

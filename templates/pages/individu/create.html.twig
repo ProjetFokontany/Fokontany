@@ -3,7 +3,13 @@
 {% block body %}
     <div class="card">
          <div class="card-body">
-            <h2 class="header-title">Nouveau Individu</h2>
+            <h2 class="header-title">
+                {% if editMode %}
+                    Modification du profil de l'individu
+                {% else %}
+                    Creation d'un individu
+                {% endif %}
+            </h2>
                 {{ form_start(formIndividu) }}
                      <div class="form-row align-items-center">
                         <div class="col-sm-6 my-1">
@@ -46,7 +52,13 @@
                         <div class="col-sm-3 my-1 "></div>
                         
                         <div class="col-sm-2 pull-right">
-                            <button type ="submit" class="btn btn-info" >Enregistrer</button>
+                            <button type ="submit" class="btn btn-info" >
+                                {% if editMode %}
+                                    Enregistrer les modifications
+                                {% else %}
+                                    Ajouter l'individu
+                                {% endif %}
+                            </button>
                         </div> 
                         
                     </div>

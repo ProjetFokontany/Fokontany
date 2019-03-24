@@ -4,5 +4,10 @@
         <div class="card-body">
             <h2 class="header-title">Liste des individus</h2>
         </div>
-   </div><br>
+   </div>
+   {% for individu in individus %}
+        <h2>{{ individu.nom }}</h2>
+        {# <a href="{{ path('individu_show', {'id':individu.id}) }}" class="btn btn-primary">Voir plus</a> #}
+        
+    {% endfor %}
 {% endblock %}
