@@ -14,7 +14,6 @@ use App\Repository\IndividuRepository;
 
 class IndividuController extends AbstractController
 {
-
     /**
      * @Route("/individu/liste", name="individu_liste")
      * @var Response
