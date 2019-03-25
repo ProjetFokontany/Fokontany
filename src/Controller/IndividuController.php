@@ -28,7 +28,7 @@ class IndividuController extends AbstractController
     }
 
     /**
-     * @Route("/individu/create/", name = "individu_create")
+     * @Route("/individu/new/", name = "individu_new")
      * @Route("/individu/{id}/edit", name="individu_edit")
      */
 

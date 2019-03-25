@@ -2,51 +2,50 @@
 {% block body %}
        <div class="card">
         <div class="card-body">
-            <h3>Nouveau foyer</h3>
-            <form>
+            <h3>
+                {% if editMode %}
+                    Modification d'un foyer
+                {% else %}
+                    Creation d'un nouveau foyer
+                {% endif %}
+            </h3>
+            {{ form_start(formFoyer) }}
                     <div class="form-row align-items-center">
                         <div class="col-sm-6 my-1">
-                            <label class="" for="inlineFormInputName">Père</label>
-                            <input type="text" class="form-control" name="pere" id="inputPere" placeholder="nom du père">
+                            {{ form_row(formFoyer.pere, {'attr': {'placeholder': "Pere de foyer", 'class':'form-control'}}) }}
                         </div>
                         <div class="col-sm-6 my-1">
-                            <label class="" for="inlineFormInputName">Mère</label>
-                            <input type="text" class="form-control" name="mere" id="inputMere" placeholder="nom de la mère">
+                            {{ form_row(formFoyer.mere, {'attr': {'placeholder': "Mere au foyer", 'class':'form-control'}}) }}
                         </div>
                         <div class="col-sm-4 my-1">
-                            <label class="" for="inlineFormInputName">Nombre du membre de la fammile</label>
-                            <input type="number" class="form-control" name="numeroCin" id="inputFamille" placeholder="numéro cin" >
+                            {{ form_row(formFoyer.nombre, {'attr': {'placeholder': "Nombre de personnes", 'class':'form-control'}}) }}
                         </div>
                          <div class="col-sm-4 my-1">
-                            <label class="" for="inlineFormInputName">Revenu père</label>
-                            <input type="number" class="form-control" name="revenuPere" id="inputRevenuPere" placeholder="Revenu père">
+                            {{ form_row(formFoyer.revenu_pere, {'attr': {'placeholder': "Revenu du pere", 'class':'form-control'}}) }}
                         </div>
                          <div class="col-sm-4 my-1">
-                            <label class="" for="inlineFormInputName">Revenu Mère</label>
-                            <input type="number" class="form-control" name="revenuMere" id="inputFonction" placeholder="Revenu mère">
+                            {{ form_row(formFoyer.revenu_mere, {'attr': {'placeholder': "Revenu du mere", 'class':'form-control'}}) }}
                         </div>
                         <div class="col-sm-6 my-1">
-                            <label class="" for="inlineFormInputName">Apparttement</label>
-                            <select  class="form-control" name="secteurActivite" id="inputActivity" >
-                                <option>Apparttement 1</option>
-                                <option>SApparttement 2</option>
-                            </select>
+                            {{ form_row(formFoyer.id_appartement, {'attr': {'class':'form-control'}}) }}
                         </div>
                         <div class="col-sm-6 my-1">
-                            <label class="" for="inlineFormInputName">Quartier</label>
-                            <select  class="form-control" name="niveauEtude" id="inputEtude" >
-                                <option>Quartier 1</option>
-                                <option>Quartier 2</option>
-                            </select>
+                            {{ form_row(formFoyer.id_quartier, {'attr': {'class':'form-control'}}) }}
                         </div>
                         <br><br>
 
                         <div class="col-auto my-1">
-                            <button type ="submit" class="btn btn-primary" >Enregistrer</button>
+                            <button type ="submit" class="btn btn-primary" >
+                                {% if editMode %}
+                                    Enregistrer les modifications
+                                {% else %}
+                                    Ajouter le foyer
+                                {% endif %}
+                            </button>
                         </div>
                         
                     </div>
-                </form>
+                {{ form_end(formFoyer) }}
 
         </div>
        </div>
