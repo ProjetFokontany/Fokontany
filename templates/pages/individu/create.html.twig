@@ -6,12 +6,24 @@
             <h2 class="header-title">Nouveau Individu</h2>
                 {{ form_start(formIndividu) }}
                      <div class="form-row align-items-center">
-                        <div class="col-sm-6 my-1">
+                        <div class="col-sm-4 my-1">
                            {{ form_row(formIndividu.nom, {'attr': {'placeholder': "Nom de l'individu", 'class':'form-control'}}) }}
                         </div>
-                        <div class="col-sm-6  my-1">
+                        <div class="col-sm-4  my-1">
                             {{ form_row(formIndividu.prenom, {'attr': {'placeholder': "Prenom de l'individu", 'class':'form-control'}}) }}
                         </div>
+
+                       
+                        <div class="col-sm-1.5 my-1">
+                                {{ form_row(formIndividu.date_naiss.day, {'attr': {'class': 'form-control'}}) }}                             
+                        </div>
+                        <div class="col-sm-1.5 my-1">
+                                {{ form_row(formIndividu.date_naiss.month, {'attr': {'class': 'form-control'}}) }}
+                        </div>
+                        <div class="col-sm-1.5 my-1">
+                                {{ form_row(formIndividu.date_naiss.year, {'attr': {'class': 'form-control'}}) }}                              
+                        </div>
+
                         <div class="col-sm-4  my-1">
                                 {{ form_row(formIndividu.sexe, {'attr': { 'class':'form-control'}}) }}
                         </div>
@@ -33,16 +45,7 @@
                             {{ form_row(formIndividu.id_foyer, {'attr': { 'class':'form-control'}}) }}
                         </div>
 
-                        {{ form_label(formIndividu.date_naiss, 'Date de naissance:')}}
-                        <div class="col-sm-1.5 my-1">
-                                {{ form_row(formIndividu.date_naiss.day, {'attr': {'class': 'form-control'}}) }}                             
-                        </div>
-                        <div class="col-sm-1.5 my-1">
-                                {{ form_row(formIndividu.date_naiss.month, {'attr': {'class': 'form-control'}}) }}
-                        </div>
-                        <div class="col-sm-1.5 my-1">
-                                {{ form_row(formIndividu.date_naiss.year, {'attr': {'class': 'form-control'}}) }}                              
-                        </div>
+                        
                         <div class="col-sm-3 my-1 "></div>
                         
                         <div class="col-sm-2 pull-right">
