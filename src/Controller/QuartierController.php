@@ -5,62 +5,43 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Entity\Quartiers;
+use Symfony\Component\HttpFoundation\Request;
+use Doctrine\Common\Persistence\ObjectManager;
+use App\Form\QuartierType;
+use App\Repository\FoyerRepository;
 
 class QuartierController extends AbstractController{
 
     /**
-     * @Route("/quartier", name="quartier.liste")
-     * @var Response
+     * @Route("/quartier/new", name="quartier_new")
+     * @Route("/quartier/{id}/edit", name="quartier_edit")
      */
-    public function index(): Response {
-        return new Response ($this->renderView("pages/quartier/index.html.twig"));
+    public function form(Quartiers $quartier = null, Request $request, ObjectManager $manager) : Response {
+        if(!$quartier){
+            $quartier = new Quartiers();
+        }
+        $form = $this->createForm(QuartierType::class, $quartier);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $manager->persist($quartier);
+            $manager->flush();
+            return $this->redirectToRoute('quartier_liste');
+        }
+        return new Response ($this->renderView("pages/quartier/create.html.twig", [
+            'formQuartier' => $form->createView(),
+            'editMode' => $quartier->getId() !== null
+        ]));
     }
-
-    public function create() : Response {
-        return new Response ($this->renderView("pages/quartier/create.html.twig"));
+    
+    /**
+     * @Route("/quartier/liste", name = "quartier_liste")
+     */
+    public function list(FoyerRepository $repo) : Response {
+        $quartiers = $repo->findAll();
+        return new Response ($this->renderView("pages/quartier/list.html.twig",[
+            'controller_name' => 'QuartierController',
+            'quartiers'        => $quartiers
+        ]));
     }
-
-    public function list() : Response {
-        return new Response ($this->renderView("pages/quartier/list.html.twig"));
-    }
-
-
-    /**
-     * @Route("/quartier/search={search}","")
-     */
-    // public function search($id): Response {
-    //     return $this->render('pages/quartier/liste.html.twig');
-    // }
-
-    /**
-     * @Route("/quartier/delete/{id}","delete.{id}")
-     */
-
-    // public function delete($id): Response {
-    //     return $this->render('pages/quartier/liste.html.twig');
-    // }
-
-    /**
-     * @Route("/quartier/modifier/{id}","modifier.{id}")
-     */
-
-    // public function modifier($id): Respose {
-    //     return $this->render('pages/quartier/modification-page.html.twig');
-    // }
-
-    /**
-     * @Route("/quartier/edit","")
-     */
-
-    // public function edit(): Response {
-    //     return $this->render('pages/quartier/liste.html.twig');
-    // }
-
-    /**
-     * @Route("/quartier/detail","")
-     */
-
-    // public function detail($id): Response {
-    //     return $this->render('pages/quartier/detail.html.twig');
-    // }
 }

@@ -2,41 +2,45 @@
 {% block body %}
     <div class="card" >
         <div class="card-body">
-            <h3>Nouvelle appartement</h3>
+            <h3>
+                {% if editMode %}
+                    Modification d'un appartement
+                {% else %}
+                    Creation d'un nouveau appartement
+                {% endif %}
+            </h3>
 
-            <form>
+           {{ form_start(formAppart) }}
                     <div class="form-row align-items-center">
                         <div class="col-sm-12 my-1">
-                            <label class="" for="inlineFormInputName">Adresse</label>
-                            <input type="text" class="form-control" name="adresse" id="inputAdresse" placeholder="Adresse de l'appartement">
+                            {{ form_row(formAppart.adresse, {'attr': {'placeholder': "Adresse", 'class':'form-control'}}) }}
                         </div>
                         <div class="col-sm-6 my-1">
-                            <label class="" for="inlineFormInputName">Latitude</label>
-                            <input type="number" class="form-control" name="latitide" id="inputLongitude" placeholder="Latitde de l'appartement">
+                            {{ form_row(formAppart.latitude, {'attr': {'placeholder': "Latitude", 'class':'form-control'}}) }}
                         </div>
                         <div class="col-sm-6 my-1">
-                            <label class="" for="inlineFormInputName">Longitude</label>
-                            <input type="number" class="form-control" name="longitude" id="inputFamille" placeholder="Longitude de l'appartement" >
+                            {{ form_row(formAppart.longitude, {'attr': {'placeholder': "Longitude", 'class':'form-control'}}) }}
                         </div>
                          <div class="col-sm-6 my-1">
-                            <label class="" for="inlineFormInputName">Nombre de foyer dans l'appartement </label>
-                            <input type="number" class="form-control" name="nombreFoyer" id="inputNombreFoyer" placeholder="Nombre foyer">
+                           {{ form_row(formAppart.nombre_foyer, {'attr': {'placeholder': "Nombre de foyer", 'class':'form-control'}}) }}
                         </div>
                          <div class="col-sm-6 my-1">
-                            <label class="" for="inlineFormInputName">Dans quelle quartier</label>
-                                <select class="form-control" name="quartier" id="inputQuartier">
-                                    <option>Quartier 1 </option>
-                                    <option>Quartier 2 </option>
-                                </select>
+                            {{ form_row(formAppart.id_quartier, {'attr': { 'class':'form-control'}}) }}
                         </div>
                         <br><br>
 
                         <div class="col-auto my-1">
-                            <button type ="submit" class="btn btn-success" >Enregistrer</button>
+                            <button type ="submit" class="btn btn-success" >
+                                {% if editMode %}
+                                    Enregistrer les modifications
+                                {% else %}
+                                    Ajouter l'appartement
+                                {% endif %}
+                            </button>
                         </div>
                         
                     </div>
-                </form>
+                {{ form_end(formAppart) }}
 
         </div>
     </div>

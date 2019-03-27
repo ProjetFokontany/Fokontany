@@ -5,62 +5,43 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use App\Entity\Appartements;
+use Doctrine\Common\Persistence\ObjectManager;
+use App\Form\AppartementType;
+use App\Repository\AppartementsRepository;
+use Symfony\Component\HttpFoundation\Request;
 
 class AppartementController extends AbstractController{
 
     /**
-     * @Route("/appartement", name="appartement.liste")
-     * @var Response
+     * @Route("/appart/new", name = "appart_new")
+     * @Route("/appart/{id}/edit", name = "appart_edit")
      */
-    public function index(): Response {
-        return new Response($this->renderView('pages/appartement/index.html.twig')) ;
+    public function form(Appartements $appartement = null, Request $request, ObjectManager $manager) : Response {
+        if(!$appartement){
+            $appartement = new Appartements();
+        }
+        $form = $this->createForm(AppartementType::class, $appartement);
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $manager->persist($appartement);
+            $manager->flush();
+            return $this->redirectToRoute('appartement_liste');
+        }
+        return new Response ($this->renderView('pages/appartement/create.html.twig',[
+            'formAppart' => $form->createView(),
+            'editMode' => $appartement->getId() !== null
+        ]));
     }
 
-    public function create() : Response {
-        return new Response ($this->renderView('pages/appartement/create.html.twig'));
-    }
-
-
-    public function list() : Response {
-        return new Response ($this->renderView('pages/appartement/list.html.twig'));
-    }
-
-    /**
-     * @Route("/appartement/search/{search}","")
+     /**
+     * @Route("/appart/liste", name = "appartement_liste")
      */
-    // public function search($id): Response {
-    //     return $this->render('pages/appartement/liste.html.twig');
-    // }
-
-    /**
-     * @Route("/appartement/delete/{id}","appartement.delete.{id}")
-     */
-
-    // public function delete($id): Response {
-    //     return $this->render('pages/appartement/liste.html.twig');
-    // }
-
-    /**
-     * @Route("/appartement/modifier/{id}","appartement.modifier.{id}")
-     */
-
-    // public function modifier($id): Respose {
-    //     return $this->render('pages/appartement/modification-page.html.twig');
-    // }
-
-    /**
-     * @Route("/appartement/edit","")
-     */
-
-    // public function edit(): Response {
-    //     return $this->render('pages/appartement/liste.html.twig');
-    // }
-
-    /**
-     * @Route("/appartement/detail","")
-     */
-
-    // public function detail($id): Response {
-    //     return $this->render('pages/appartement/detail.html.twig');
-    // }
+    public function liste(AppartementsRepository $repo){
+        $appartements = $repo->findAll();
+        return new Response($this->renderView('pages/appartement/list.html.twig',[
+            'controller_name' => 'AppartementController',
+            'appartements'        => $appartements
+        ]));
+    }    
 }
