@@ -76,7 +76,7 @@
                 <tr>
                   <td>{{ individu.nom }}</td>
                   <td>{{ individu.prenom }}</td>
-                  <td>{{ individu.datenaiss.date }}</td>
+                  <td>{{ individu.datenaiss | date('d/m/Y') }}</td>
                   <td>{{ individu.fonction }}</td>
                   <td>{{ individu.numerocin }}</td>
                   <td>{{ individu.sexe }}</td>
