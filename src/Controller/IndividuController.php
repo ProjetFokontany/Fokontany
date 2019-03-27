@@ -64,6 +64,15 @@ class IndividuController extends AbstractController
     // }
 
 
+
+    /**
+     * @Route("/individu/show",name="individu_show")
+     */
+
+    public function show (): Response {
+        return new Response ($this->renderView('pages/individu/show.html.twig'));
+    }
+
     /**
      * @Route("/individu/search={search}","")
      */

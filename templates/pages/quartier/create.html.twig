@@ -24,7 +24,11 @@
                             {{ form_row(formQuartier.nombre_appartement, {'attr': {'placeholder': "Nombre d'appartements", 'class':'form-control'}}) }}
                         </div>
                          <div class="col-sm-4 my-1">
-                            {{ form_row(formQuartier.id_fokontany, {'attr': {'class':'form-control'}}) }}
+                            <label class="" for="inlineFormInputName">Fokotany</label>
+                            <select class="form-control" name="fokotany" id="inputFokotany" > 
+                                <option>Fokotany 1</option>
+                                <option>Fokotany 2</option>
+                            </select>
                         </div>
                         <br><br>
 
